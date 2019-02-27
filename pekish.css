@@ -17,7 +17,7 @@ body {
     padding: 0.5em; 
     background-color: rgb(0, 0, 0); 
     border-bottom: 0.5px solid #ff8533; 
-    text-indent: 10em; 
+    text-indent: 4em; 
     
     
 
@@ -71,6 +71,8 @@ text-decoration: none;
 .two { grid-area: box2;  
 
     background-color: rgb(240, 240, 240);  
+    background-image: url(fjader.jpg);
+    background-position: center;
     font-size: 60px;
     padding-left: 80px;
     padding-right: 100px; 
@@ -84,9 +86,10 @@ text-decoration: none;
 .three { grid-area: box3;  
     padding: 1.5em; 
     background-color: #222328;
-    color: #C36327;
+    color: whitesmoke;
     border-bottom: 2px solid #ff8533;
     font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
    
 }
 
