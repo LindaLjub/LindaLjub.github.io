@@ -14,7 +14,7 @@
 
 <canvas id="myCanvas" width="820" height="520"></canvas>
 
-    <center><button type="button" onclick="window.location.href='../index.html'">STARTSIDA</button></center>
+    <center><button type="button" onclick="window.location.href='../index.html'">Startsida</button></center>
 
 <script>
     
@@ -179,7 +179,7 @@ function collisionDetection() {
     setTimeout(function() {
             (window.confirm('VICTORY!')) 
             {
-            window.location.href='http://home.mi.sh.se/~sh17hp0755/test/game/';
+            window.location.href='../index.html';
             };
             document.location.reload(); 
                               }, 500); 
@@ -223,7 +223,7 @@ ctx.closePath();
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.fill();
     ctx.closePath();
 };
