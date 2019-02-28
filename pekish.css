@@ -16,7 +16,7 @@ body {
 .one { grid-area: box1;  
     padding: 0.5em; 
     background-color: rgb(0, 0, 0); 
-    border-bottom: 0.5px solid #ff8533; 
+    border-bottom: 0.5px solid #99ddff; 
     text-indent: 4em; 
     
     
@@ -25,7 +25,7 @@ body {
 
 .one > a {
     
-    color: #C36327;
+    color: #cceeff;
     text-decoration: none; 
     font-family: 'Open Sans', sans-serif;
     font-size: 12px; 
@@ -72,12 +72,13 @@ text-decoration: none;
 
     background-color: rgb(240, 240, 240);  
     background-image: url(fjader.jpg);
-    background-position: center;
+    background-position: right;
     font-size: 60px;
     padding-left: 80px;
     padding-right: 100px; 
     padding-bottom: 80px;
     padding-top: 100px; 
+    
     
       
     
@@ -87,7 +88,7 @@ text-decoration: none;
     padding: 1.5em; 
     background-color: #222328;
     color: whitesmoke;
-    border-bottom: 2px solid #ff8533;
+    border-bottom: 2px solid #99ddff;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
    
@@ -102,23 +103,16 @@ text-decoration: none;
         height: 35px;
         padding-right: 20px; 
     
+    
 }
 
 
 .four { grid-area: box4;  
     padding: 2em; 
-    background-color: rgb(240, 240, 240); }
+    background-color: rgb(240, 240, 240); 
+    border-top: 2px solid #99ddff;
 
-.five { grid-area: box5;  
-    padding: 5em;
-    color: #ff8533;
-    border-top: 1.5px solid #ff8533;
-    background-color: #00001a; }
-
-.six { grid-area: box6;  
-    padding: 0.5em;
-    color: #ff8533;
-    background-color: rgb(0, 0, 0);  }
+}
 
 
 /* utanför, runt om boxarna, själva grid:en, position på boxarna */ 
@@ -129,9 +123,7 @@ text-decoration: none;
         'box1 box1 box1 box1 box1'
         'box2 box2 box2 box2 box2' 
         'box3 box3 box3 box3 box3'
-        'box4 box4 box4 box4 box4'
-        'box5 box5 box5 box5 box5'
-        'box6 box6 box6 box6 box6'; 
+        'box4 box4 box4 box4 box4'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
     grid-gap: 0em;
@@ -154,13 +146,15 @@ text-decoration: none;
 .ruta1 { grid-area: ruta1;
     padding: 2em;
     background-color: white;
-    border-top: 20px solid #ff8533;
+    border-top: 20px solid #cceeff;
+    padding-bottom: 20em;
 }
 
 .ruta2 { grid-area: ruta2; 
     padding: 2em;
     background-color: white;
     border-top: 20px solid #00001a;
+    padding-bottom: 20em;
 }
 
 
