@@ -1,0 +1,71 @@
+
+
+body{
+    
+    background-image: url(fjader.jpg);
+    /*background-position: right;*/
+}
+
+
+
+.header { grid-area: header;  
+    padding: 0.5em; 
+    background-color: rgb(0, 0, 0, 0.1);
+    border-bottom: 2.2px solid grey; 
+    /* border-bottom: 2.2px solid #99ddff; */
+    text-indent: 4em;  
+    color:black; 
+    
+    font-size: 15px;
+    font-family: "Times New Roman", serif;
+    text-shadow: .1em .1em .15em dimgray; 
+    text-decoration-line: overline;
+    
+
+}
+
+.sida1 { grid-area: box1;  
+
+    background-color: rgb(240, 240, 240, 0.6);
+    font-size: 15px;
+    text-align: left;
+    
+}
+
+.sida1 h3{
+    
+    
+    font-size: 60px;
+    text-align: center;
+}
+
+.sida2 { grid-area: box2;  
+
+    background-color: rgb(240, 240, 240, 0.6);
+    font-size: 60px;
+    text-align: center;
+
+    
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'box1 box2'; 
+    
+/* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
+    grid-gap: 2em;
+   
+/* grid-column-gap, mellanrum mellan boxarna sidleds. */ 
+    grid-column-gap: 2em; 
+    
+}
+
+  /* Detta sker innanför alla boxarna */
+    .grid-container > div {
+        
+        
+}
