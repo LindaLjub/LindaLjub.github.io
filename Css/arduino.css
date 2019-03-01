@@ -50,12 +50,20 @@ h3{
 
     background-color: rgb(240, 240, 240, 0.6);
     font-size: 25px;
-    text-align: left;
-    text-indent: 20em;
+    text-align: center;
+   // text-indent: 10em;
 
     
 }
 
+ul {
+    list-style-type: none;
+}
+
+li{
+    list-style-type: none;
+    
+}
 
 
 .grid-container {
