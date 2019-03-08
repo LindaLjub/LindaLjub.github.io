@@ -40,7 +40,7 @@ body{
 }
 
 
-.sida1 h4, .sida2 h4{
+.sida1 p, .sida2 p{
     font-size: 20px;
     text-align: left;
     text-indent: 8em;
@@ -54,14 +54,6 @@ body{
     text-align: center;   
 }
 
-ul {
-    list-style-type: none;
-}
-
-li{
-    list-style-type: none;
-    
-}
 
 
 .grid-container {
