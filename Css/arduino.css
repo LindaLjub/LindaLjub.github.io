@@ -28,32 +28,30 @@ body{
 .sida1 { grid-area: box1;  
 
     background-color: rgb(240, 240, 240, 0.6);
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     
 }
 
-.sida1 h3{
-    
+.sida1 h3, .sida2 h3{
     
     font-size: 60px;
     text-align: center;
 }
 
-h3{
+
+.sida1 h4, .sida2 h4{
+    font-size: 20px;
+    text-align: left;
+    text-indent: 8em;
     
-    font-size: 60px;
-    text-align: center;
 }
 
 .sida2 { grid-area: box2;  
 
     background-color: rgb(240, 240, 240, 0.6);
-    font-size: 25px;
-    text-align: center;
-   
-
-    
+    font-size: 20px;
+    text-align: center;   
 }
 
 ul {
