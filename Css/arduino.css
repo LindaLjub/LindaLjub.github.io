@@ -4,9 +4,8 @@ body{
     
     background-image: url(fjader.jpg);
     /*background-position: right;*/
+    
 }
-
-
 
 .header { grid-area: header;  
     padding: 0.5em; 
@@ -43,7 +42,7 @@ body{
 .sida1 p, .sida2 p{
     font-size: 20px;
     text-align: left;
-    text-indent: 8em;
+    text-indent: 4em;
     
 }
 
@@ -54,16 +53,29 @@ body{
     text-align: center;   
 }
 
+.planta1 { grid-area: box3;
+    background-image: url(bild2.jpg);
+    padding-bottom: 10em;
+    background-size: cover;
+}
 
+.planta2 { grid-area: box4;
+    background-image: url(bild1.jpg);
+    background-size: cover;
+    padding-bottom: 10em;
+    background-position: center;
+    
+}
 
 .grid-container {
     display: grid;
     grid-template-areas: 
         'header header'
-        'box1 box2'; 
+        'box1 box2'
+        'box3 box4'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
-    grid-gap: 2em;
+    grid-gap: 1em;
    
 /* grid-column-gap, mellanrum mellan boxarna sidleds. */ 
     grid-column-gap: 2em; 
