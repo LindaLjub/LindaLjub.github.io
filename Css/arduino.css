@@ -28,7 +28,7 @@ body{
 
     background-color: rgb(240, 240, 240, 0.6);
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -39,10 +39,8 @@ body{
 }
 
 
-.sida1 p, .sida2 p{
+.sida1 blockquote, .sida2 blockquote{
     font-size: 20px;
-    text-align: left;
-    text-indent: 4em;
     
 }
 
@@ -50,7 +48,7 @@ body{
 
     background-color: rgb(240, 240, 240, 0.6);
     font-size: 20px;
-    text-align: center;   
+    text-align: left;  
 }
 
 .planta1 { grid-area: box3;
