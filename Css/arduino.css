@@ -58,7 +58,7 @@ body{
 }
 
 .planta2 { grid-area: box4;
-    background-image: url(bild1.jpg);
+    background-image: url(oregano.jpg);
     background-size: cover;
     padding-bottom: 15em;
     background-position: center;
@@ -67,14 +67,14 @@ body{
 
 .planta2:hover {
     
-    background-image: url(bild5.png);
+    background-image: url(oregano.png);
     padding-bottom: 15em;
     background-size: cover;
 }
 
 .planta1:hover {
     
-    background-image: url(bild6.png);
+    background-image: url(basilika.png);
     padding-bottom: 15em;
     background-size: cover;
 }
