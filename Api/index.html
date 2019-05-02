@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="sv">
+
+<html>
   <head>
      <meta charset="utf-8">
       <!-- Gör att webbplatsen fungerar för mobil -->
@@ -60,31 +60,30 @@
           
     </div>   
           
-    <script language="javascript"> 
-    
-    const url = "http://api.icndb.com/jokes/random/3"; 
-    var text = "";
 
-    // jokes nedanför är namnet på diven.
-    const info = document.getElementById('jokeinfo');
-    
-    // hämtar från url
-    fetch(url)
-    // får ett respons som vi gör till json format
-    .then((resp) => resp.json())
-    // skapar en namnlös funktion och en variabel.
-    .then(function (data)
+<script language="javascript">
+
+const url = "https://cors-anywhere.herokuapp.com/http://api.icndb.com/jokes/random/3";
+
+const info = document.getElementById('jokeinfo');
+
+fetch(url)
+.then((resp) => resp.json())
+.then(function (data)
+{
+    let jokes = data.value
+    return jokes.map(function (jokeobj)
     {
-            let jokes = data.value
-            return jokes.map(function (jokeobj)
-            {
+        info.innerHTML += `${jokeobj.joke}<br>`;
+    }
+    
+    )
 
-                info.innerHTML += `<h2><br># </h2>${jokeobj.joke}<br>`;
-                
-            })    
-    })
-   
+
+})
+
 </script>
+          
 <script>
     // en variabel "app" pekar på div "root"
     const app = document.getElementById('root');
