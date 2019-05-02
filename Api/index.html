@@ -44,21 +44,47 @@
      <!--Här börjar grid-container -->      
   <div class="grid-container2">  
   <div class="ruta1">  
-         <a href="/test_Api.html">Api test</a>
-       <a href="Api/test_Api.html">Api test2</a>
+        <a href="test_Api1.html">Api test2</a>
       </div>
     
-   <div class="ruta2">  
+   <div class="ruta2" id = "jokeinfo">  
+       <!--javascript test-->
       </div>
-        <a href="test_Api.html">Api test</a>
+      
       
       </div>
 </div>           
            
                   
-          
       </div>
+      
           
     </div>   
+          
+    <script language="javascript"> 
+    
+    const url = "http://api.icndb.com/jokes/random/3"; 
+    var text = "";
+
+    // jokes nedanför är namnet på diven.
+    const info = document.getElementById('jokeinfo');
+    
+    // hämtar från url
+    fetch(url)
+    // får ett respons som vi gör till json format
+    .then((resp) => resp.json())
+    // skapar en namnlös funktion och en variabel.
+    .then(function (data)
+    {
+            let jokes = data.value
+            return jokes.map(function (jokeobj)
+            {
+
+                info.innerHTML += `${jokeobj.joke}<br>`;
+                
+            })    
+    })
+   
+</script>
     </body>
 </html>
