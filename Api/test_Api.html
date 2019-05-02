@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Api test</title>   
+</head>
+<body>
+    <div id="jokeinfo"></div>
+    
+    
+<script language="javascript"> 
+    
+    const url = "http://api.icndb.com/jokes/random"; 
+    var text = "";
+
+    // jokes nedanför är namnet på diven.
+    const info = document.getElementById('jokeinfo');
+    
+    // hämtar från url
+    fetch(url)
+    // får ett respons som vi gör till json format
+    .then((resp) => resp.json())
+    // skapar en namnlös funktion och en variabel.
+    .then(function (data)
+    {
+            let jokes = data.value
+            return jokes.map(function (jokeobj)
+            {
+                // loopar egenom alla skämt, läggs in i en aray.
+               // for(var i=0; i < jokes.length; i++)
+               // {
+               //     var obj = jokes[i];
+               //     text += obj.Text;
+               // }
+                info.innerHTML += `${jokeobj.joke}<br>`;
+                
+            })    
+    })
+   
+</script>
+    
+    
+    
+</body>
+</html>
