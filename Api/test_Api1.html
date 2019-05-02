@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie DB</title>
+    
+    <style>
+        div{
+            border: 15px solid blue;
+            padding: inherit;
+            margin: 26px;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,12 +31,12 @@
     // request till ett api, skapas
     var request = new XMLHttpRequest();
     // använda requestet, //true - asyncromt
-    request.open('GET','https://ghibliapi.herokuapp.com/films',true)
+    request.open('GET','https://ghibliapi.herokuapp.com/films/',true);
     // skicka request
     request.send();
     
     //när requestet returnerar något
-    request.onload = Function()
+    request.onload = function()
     {
         // Vi skapar ett json objekt av datan
         var data = JSON.parse(this.response);

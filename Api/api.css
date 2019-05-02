@@ -148,6 +148,7 @@ text-decoration: none;
     background-color: white;
     border-top: 20px solid #cceeff;
     padding-bottom: 20em;
+    color: black;
 }
 
 .ruta2 { grid-area: ruta2; 
