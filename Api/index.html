@@ -46,7 +46,8 @@
   <div class="ruta1" id="root">  
       </div>
     
-   <div class="ruta2" id = "jokeinfo">  
+   <div class="ruta2" id = "jokeinfo"> 
+       <h1>Jokes</h1>
        <!--javascript test-->
       </div>
       
@@ -74,7 +75,7 @@ fetch(url)
     let jokes = data.value
     return jokes.map(function (jokeobj)
     {
-        info.innerHTML += `${jokeobj.joke}<br>`;
+        info.innerHTML += `<br>*${jokeobj.joke}<br>`;
     }
     
     )
