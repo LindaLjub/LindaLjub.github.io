@@ -146,9 +146,10 @@ text-decoration: none;
 .ruta1 { grid-area: ruta1;
     padding: 2em;
     background-color: white;
-    border-top: 20px solid #cceeff;
+    border-top: 20px solid #00001a;
     padding-bottom: 20em;
     color: black;
+
 }
 
 .ruta2 { grid-area: ruta2; 
@@ -159,7 +160,7 @@ text-decoration: none;
     color: black;
 }
 .ruta3 { grid-area: ruta3; 
-      padding: 2em;
+    padding: 2em;
     background-color: white;
     border-top: 20px solid #cceeff;
     padding-bottom: 20em;
@@ -168,7 +169,7 @@ text-decoration: none;
 .ruta4 { grid-area: ruta4; 
     padding: 2em;
     background-color: white;
-    border-top: 20px solid #00001a;
+    border-top: 20px solid #cceeff;
     padding-bottom: 20em;
     color: black;
 }
@@ -177,8 +178,8 @@ text-decoration: none;
 .grid-container2 {
     display: grid;
     grid-template-areas: 
-        'ruta4 ruta2'
-        'ruta3 ruta1'; 
+        'ruta4 ruta1'
+        'ruta3 ruta2'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
     grid-gap: 2em;

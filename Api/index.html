@@ -18,19 +18,16 @@
       
 <!-- ruta - -->       
 <div class="one"> 
-    <a href="index.html">Linda Lindgren</a>
+    <a href="../index.html">Linda Lindgren</a>
 </div>
  
 <!-- ruta - -->       
 <div class="two">  
     <div class="text1">
-    <a href="index.html">Linda Lindgren</a></div>
+    <a href="../index.html">Linda Lindgren</a></div>
 </div>
       
-      
-      
-      
-      
+        
 <!-- ruta - -->       
 <div class="three"> 
     <img src="mo.png" alt="logo">
@@ -43,7 +40,8 @@
 <div class="four">
      <!--Här börjar grid-container -->      
   <div class="grid-container2">  
-  <div class="ruta1" id="root">  
+  <div class="ruta1" id="root"> 
+      <h1>Movies</h1><br><hr><br>
       </div>
     
    <div class="ruta2" id = "jokeinfo"> 
@@ -115,7 +113,7 @@ fetch(url)
                     const card = document.createElement('div');
                     
                     // filmens titel ska visas i en rubik, en rubrik skapas h1
-                    const h1 = document.createElement('h1');
+                    const h1 = document.createElement('h3');
                     // vad ska stå i h1, filmtiteln.
                     // Om man istället skriver movie.people får du folket i filmen.
                     h1.textContent = movie.title;
@@ -124,7 +122,7 @@ fetch(url)
                     const p = document.createElement('p');
                     // gör description kortare, tar max 300 tecken
                     movie.description = movie.description.substring(0, 300);
-                    p.textContent = `${movie.description}...`;
+                    p.textContent = `${movie.description}`;
                     
                     // vi vill lägga alla cards i vår container
                     container.appendChild(card);
@@ -158,7 +156,7 @@ fetch(url)
             let jokes2 = data.ResponseData.Buses
             return jokes2.map(function (jokeobj2)
             {
-                info2.innerHTML += `<br>${jokeobj2.TransportMode}: ${jokeobj2.LineNumber} from ${jokeobj2.StopAreaName} to ${jokeobj2.Destination} <b><br> Departure in: ${jokeobj2.DisplayTime} </b><br><br><hr>`;
+                info2.innerHTML += `<br>${jokeobj2.TransportMode}: ${jokeobj2.LineNumber} from ${jokeobj2.StopAreaName} to ${jokeobj2.Destination} <b><br> Departure in: ${jokeobj2.DisplayTime} **${jokeobj2.TimeTabledDateTime.substring(11,16)}** </b><br><br><hr>`;
 
             })    
     })
