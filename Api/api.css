@@ -178,8 +178,6 @@ text-decoration: none;
     display: grid;
     grid-template-areas: 
         'ruta1 ruta2'
-        'ruta1 ruta2'
-        'ruta3 ruta4'
         'ruta3 ruta4'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
