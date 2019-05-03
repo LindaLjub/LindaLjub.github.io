@@ -177,8 +177,8 @@ text-decoration: none;
 .grid-container2 {
     display: grid;
     grid-template-areas: 
-        'ruta1 ruta2'
-        'ruta3 ruta4'; 
+        'ruta4 ruta2'
+        'ruta3 ruta1'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
     grid-gap: 2em;

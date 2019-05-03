@@ -26,7 +26,7 @@
             let jokes = data.ResponseData.Buses
             return jokes.map(function (jokeobj)
             {
-                info.innerHTML += `${jokeobj.TransportMode}: ${jokeobj.LineNumber} from ${jokeobj.StopAreaName} to ${jokeobj.Destination} <b><br> Departure: ${jokeobj.DisplayTime} </b><br><hr>`;
+                info.innerHTML += `${jokeobj.TransportMode}: ${jokeobj.LineNumber} from ${jokeobj.StopAreaName} to ${jokeobj.Destination} <b><br> Departure in: ${jokeobj.DisplayTime} </b><br><hr>`;
 
             })    
     })
