@@ -51,7 +51,9 @@
        <!--javascript test-->
       </div>
       
-      
+<div class ="ruta3"></div>
+<div class = "ruta4" id="slinfo">
+    <h1>Tidtabell - Skarpövägen Orminge</h1><hr></div>
       </div>
 </div>           
            
@@ -64,7 +66,7 @@
 
 <script language="javascript">
 
-const url = "https://cors-anywhere.herokuapp.com/http://api.icndb.com/jokes/random/3";
+const url = "https://cors-anywhere.herokuapp.com/http://api.icndb.com/jokes/random/5";
 
 const info = document.getElementById('jokeinfo');
 
@@ -139,5 +141,32 @@ fetch(url)
     
 
 </script>
+<script language="javascript"> 
+    
+    //cors gör att man går genom en annan host för att komma vidare, för att när man har det på local host så är det inte tillåten för att den inte är tillräckligt säker.
+    const url = "https://cors-anywhere.herokuapp.com/http://api.sl.se/api2/realtimedeparturesV4.json?key=0d6124e00bc54c46904b5574c9e81b44&siteid=4122&timewindow=30"; 
+    var text = "";
+
+    // jokes nedanför är namnet på diven.
+    const info = document.getElementById('slinfo');
+    
+    // hämtar från url
+    fetch(url)
+    // får ett respons som vi gör till json format
+    .then((resp) => resp.json())
+    // skapar en namnlös funktion och en variabel.
+    .then(function (data)
+    {
+            // let är en datatyp, en variabeltyp
+            let jokes = data.ResponseData.Buses
+            return jokes.map(function (jokeobj)
+            {
+                info.innerHTML += `${jokeobj.TransportMode}: ${jokeobj.LineNumber} from ${jokeobj.StopAreaName} to ${jokeobj.Destination} <b><br> Departure: ${jokeobj.DisplayTime} </b><br><hr>`;
+
+            })    
+    })
+   
+</script>
+    
     </body>
 </html>

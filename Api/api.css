@@ -158,13 +158,29 @@ text-decoration: none;
     padding-bottom: 20em;
     color: black;
 }
+.ruta3 { grid-area: ruta3; 
+      padding: 2em;
+    background-color: white;
+    border-top: 20px solid #cceeff;
+    padding-bottom: 20em;
+    color: black;
+}
+.ruta4 { grid-area: ruta4; 
+    padding: 2em;
+    background-color: white;
+    border-top: 20px solid #00001a;
+    padding-bottom: 20em;
+    color: black;
+}
 
 
 .grid-container2 {
     display: grid;
     grid-template-areas: 
         'ruta1 ruta2'
-        'ruta1 ruta2'; 
+        'ruta1 ruta2'
+        'ruta3 ruta4'
+        'ruta3 ruta4'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
     grid-gap: 2em;
