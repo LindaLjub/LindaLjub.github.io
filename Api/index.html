@@ -49,9 +49,9 @@
        <!--javascript test-->
       </div>
       
-<div class ="ruta3"></div>
+<div class ="ruta3" id="slinfoAll"><h1>Tidtabell</h1><br><hr></div>
 <div class = "ruta4" id="slinfo">
-    <h1>Tidtabell - Skarpövägen Orminge</h1><br><hr></div>
+    <h1>Skarpövägen - Slussen</h1><br><hr></div>
       </div>
 </div>           
                         
@@ -59,8 +59,9 @@
 </div>   
           
 
-<script language="javascript">
-
+<!-- TILL JOKES -->
+<script src="apiJoke.js" type="text/javascript">
+/*
 const url = "https://cors-anywhere.herokuapp.com/http://api.icndb.com/jokes/random/5";
 
 const info = document.getElementById('jokeinfo');
@@ -79,10 +80,12 @@ fetch(url)
 
 
 })
-
+*/
 </script>
-          
-<script>
+        
+<!-- TILL FILMER -->
+<script src="apiFilm.js" type="text/javascript">
+    /*
     // en variabel "app" pekar på div "root"
     const app = document.getElementById('root');
     // skapar en div
@@ -133,11 +136,12 @@ fetch(url)
                 })
             }        
     }
-    
+    */
 
 </script>
-<script> 
-    
+<!-- TILL SL SLUSSEN -->
+<script src="apiSl.js" type="text/javascript"> 
+   /* 
     //cors gör att man går genom en annan host för att komma vidare, för att när man har det på local host så är det inte tillåten för att den inte är tillräckligt säker.
     const url2 = "https://cors-anywhere.herokuapp.com/http://api.sl.se/api2/realtimedeparturesV4.json?key=0d6124e00bc54c46904b5574c9e81b44&siteid=4122&timewindow=60"; 
     var text2 = "";
@@ -160,8 +164,11 @@ fetch(url)
 
             })    
     })
-   
+   */
 </script>
+
+<!-- TILL SL ALLA -->
+          <script src="apiSlAlla.js" type="text/javascript"> </script>
     
     </body>
 </html>

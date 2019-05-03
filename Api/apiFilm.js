@@ -1,25 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie DB</title>
-    
-    <style>
-        div{
-            border: 15px solid blue;
-            padding: inherit;
-            margin: 26px;
-        }
-    </style>
-</head>
-
-<body>
-
-  <div id="root"></div>
-    
-<script>
     // en variabel "app" pekar på div "root"
     const app = document.getElementById('root');
     // skapar en div
@@ -31,7 +9,7 @@
     // request till ett api, skapas
     var request = new XMLHttpRequest();
     // använda requestet, //true - asyncromt
-    request.open('GET','https://ghibliapi.herokuapp.com/films/',true);
+    request.open('GET','https://cors-anywhere.herokuapp.com/https://ghibliapi.herokuapp.com/films/',true);
     // skicka request
     request.send();
     
@@ -50,7 +28,7 @@
                     const card = document.createElement('div');
                     
                     // filmens titel ska visas i en rubik, en rubrik skapas h1
-                    const h1 = document.createElement('h1');
+                    const h1 = document.createElement('h3');
                     // vad ska stå i h1, filmtiteln.
                     // Om man istället skriver movie.people får du folket i filmen.
                     h1.textContent = movie.title;
@@ -59,7 +37,7 @@
                     const p = document.createElement('p');
                     // gör description kortare, tar max 300 tecken
                     movie.description = movie.description.substring(0, 300);
-                    p.textContent = `${movie.description}...`;
+                    p.textContent = `${movie.description}`;
                     
                     // vi vill lägga alla cards i vår container
                     container.appendChild(card);
@@ -70,11 +48,3 @@
                 })
             }        
     }
-    
-
-</script>
-  
-</body>
-
-</html>
-
