@@ -1,0 +1,108 @@
+
+
+body{
+    
+    background-image: url(fjader.jpg);
+    /*background-position: right;*/
+    
+}
+
+.header { grid-area: header;  
+    padding: 0.5em; 
+    background-color: rgb(0, 0, 0, 0.1);
+    border-bottom: 2.2px solid grey; 
+    /* border-bottom: 2.2px solid #99ddff; */
+    text-indent: 4em;  
+    color:black; 
+    
+    
+    font-size: 15px;
+    font-family: "Times New Roman", serif;
+    text-shadow: .1em .1em .15em dimgray; 
+    text-decoration-line: overline;
+    
+
+}
+
+.sida1 { grid-area: box1;  
+
+    background-color: rgb(240, 240, 240, 0.6);
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+.sida1 h3, .sida2 h3{
+    
+    font-size: 60px;
+    text-align: center;
+}
+
+
+.sida1 blockquote, .sida2 blockquote{
+    font-size: 20px;
+    
+}
+
+.sida2 { grid-area: box2;  
+
+    background-color: rgb(240, 240, 240, 0.6);
+    font-size: 20px;
+    text-align: left;  
+}
+
+.planta1 { grid-area: box3;
+    background-image: url(bild2.jpg);
+    padding-bottom: 15em;
+    background-size: cover;
+}
+
+.planta2 { grid-area: box4;
+    background-image: url(oregano.jpg);
+    background-size: cover;
+    padding-bottom: 15em;
+    background-position: center;
+    
+}
+
+.planta2:hover {
+    
+    background-image: url(oregano.png);
+    padding-bottom: 15em;
+    background-size: cover;
+}
+
+.planta1:hover {
+    
+    background-image: url(basilika.png);
+    padding-bottom: 15em;
+    background-size: cover;
+    background-position: left;
+}
+
+.info { grid-area: info;
+
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'box1 box2'
+        'box3 box4'
+        'info info';
+    
+/* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
+    grid-gap: 1em;
+   
+/* grid-column-gap, mellanrum mellan boxarna sidleds. */ 
+    grid-column-gap: 2em; 
+    
+}
+
+  /* Detta sker innanför alla boxarna */
+    .grid-container > div {
+        
+        
+}
