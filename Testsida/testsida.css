@@ -1,0 +1,52 @@
+* { padding: 0; margin: 0; }
+
+
+.header { grid-area: header;
+    padding: 2em;
+    background-color: grey;
+    padding-bottom: 2em;
+    color:black;
+}
+
+.ruta1 { grid-area: ruta1;
+    background-color: white;
+    color:black;
+    text-indent: 2em;
+    
+}
+
+
+.ruta2 { grid-area: ruta2; 
+    background-color: white;
+    color:black;
+    text-indent: 2em;
+    
+}
+
+.ruta3 { grid-area: ruta3;
+    background-color: white;
+    color:black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'ruta1 ruta2'
+        'ruta1 ruta2'
+        'ruta3 ruta3'; 
+    
+/* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
+    grid-gap: 2em;
+   
+/* grid-column-gap, mellanrum mellan boxarna sidleds. */ 
+    grid-column-gap: 2em; 
+    
+}
+
+  /* Detta sker innanför alla boxarna */
+    .grid-container2 > div {
+        
+    
+        
+}
