@@ -76,13 +76,64 @@
       </div>
       
     <div class="ruta3">  
+        
+        <h3>Canvas och Js rotation</h3>
+
+        <!-- skapar ett canvas -->
+		<canvas id="canvas2" width="400" height="300">
+		</canvas> 
+        
+    <!-- ett script som skapar en rektangel och sedan skapar den igen fast roterad -->
+	<script>
+		var c=document.getElementById("canvas2");
+		var ctx=c.getContext("2d");
+		ctx.fillStyle = "#FF0000";
+		ctx.fillRect(50,50, 100, 100);
+
+        // roterar
+		ctx.rotate( (Math.PI / 180) * 25);  //rotate 25 degrees.
+
+		ctx.fillStyle = "#0000FF";
+		ctx.fillRect(150,50, 100, 100);
+	</script>
+	
+
       </div>
       
+      <div class="ruta4">
+          <h3>Form, skickar ej</h3>
+          <br>
+          
+        <!-- skapar ett formulär. Placeholder är exempeltext. -->
+        <!-- autocomplete off, gör att den inte fyller i automtiskt från cookies -->
+        <!-- required gör att man måste fylla i email. submit knapp -->
+    <form autocomplete="off">
+	<label for="email">Skriv in din email: </label>
+    <br>
+	<input type="text" name="email" placeholder="email@example.com" required/>
+    <input type="submit" value="Submit"/>
+    </form><br><br>
+          
+          <h3>Sökfunktion, fungerar ej</h3>
+          <br>
+     <!-- sökfuktion, type = search är det viktiga -->
+    <!-- <input id="minSearch" name="searchitem" type="search"/> -->
+          
+    <!-- sökfunktion med lista -->
+    <input id="minSearch" type="text" list="words" />
+    <datalist id="words">
+	<option value="Canvas">
+	<option value="Linda">
+	<option value="html">
+    </datalist>
+  
+        
+          
+      </div>
       
-      
-      
+          </div>
 
-    </div>
+    
           
     </body>
     

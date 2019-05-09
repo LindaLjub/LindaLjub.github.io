@@ -26,6 +26,13 @@
 .ruta3 { grid-area: ruta3;
     background-color: white;
     color:black;
+    text-indent: 2em;
+}
+
+.ruta4 { grid-area: ruta4;
+    background-color: white;
+    color:black;
+    /* text-indent: 2em; */
 }
 
 .grid-container {
@@ -33,8 +40,7 @@
     grid-template-areas:
         'header header'
         'ruta1 ruta2'
-        'ruta1 ruta2'
-        'ruta3 ruta3'; 
+        'ruta3 ruta4'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
     grid-gap: 2em;

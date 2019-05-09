@@ -91,6 +91,7 @@ text-decoration: none;
     border-bottom: 2px solid #99ddff;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
+    
    
 }
 
@@ -158,7 +159,7 @@ text-decoration: none;
 
 .ruta1 > nav > a {
     font-family: 'Open Sans', serif;
-    font-size: 16px; 
+    font-size: 17px; 
     color: darkslateblue;
     text-decoration: none; 
 
@@ -166,7 +167,7 @@ text-decoration: none;
 
 .ruta1 > nav > a:hover{
     
-    color:white;
+    color:lightgray;
 }
 
 
