@@ -24,7 +24,7 @@
               if(data.isHome==true)
                 {
                     
-                        divtag.innerHTML = `<font color="green" size="7">${data.name} </font> 
+                        divtag.innerHTML = `<hr><font color="green" size="7">${data.name} </font> 
                         <font color="grey" size="6">
                         är ${data.Mood} idag </font> 
                         <br>
@@ -38,13 +38,13 @@
                         <button type="button" class ="button" onclick ="changeFunctionMood('SUPERGLAD', ${data.id})">  Superglad </button>
                          <button type="button" class ="button" onclick="changeFunctionMood('glad', ${data.id})">  Glad </button>
                          <button type="button" class ="button" onclick="changeFunctionMood('sur', ${data.id})">  Sur </button>
-                          <button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button>`;
+                          <button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button><hr>`;
                         datadiv.appendChild(divtag);
                 }
               else
               {
                   // person & humör
-                       divtag.innerHTML = `<font color="red" size="7">${data.name} </font>
+                       divtag.innerHTML = `<hr><font color="red" size="7">${data.name} </font>
 
                         <font color="grey" size="6">
                         är ${data.Mood} idag </font> 
@@ -60,7 +60,7 @@
                         <button type="button" class ="button" onclick ="changeFunctionMood('SUPERGLAD', ${data.id})">  Superglad </button>
                          <button type="button" class ="button" onclick="changeFunctionMood('glad', ${data.id})">  Glad </button>
                          <button type="button" class ="button" onclick="changeFunctionMood('sur', ${data.id})">  Sur </button>
-                          <button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button>`;
+                          <button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button><hr>`;
                   
                         datadiv.appendChild(divtag);
                   

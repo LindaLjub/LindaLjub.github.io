@@ -152,13 +152,58 @@ text-decoration: none;
     padding-bottom: 20em;
 }
 
+.time { grid-area: time; 
+  
+}
+
+.date{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px; 
+    text-align: center;
+    color:whitesmoke;
+    
+}
+
+.timeNow
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px; 
+    text-align: center;
+    color:whitesmoke;
+    
+}
+
+
+
+
+
+.datadiv { 
+    grid-area: datadiv; 
+     text-align: left;
+  
+}
+
+.weather { grid-area: weather; 
+   padding: 2em;
+    background-color: white;
+    border-top: 20px solid #48D1CC;
+    padding-bottom: 20em;
+}
+
+.newsNow
+{
+    
+    color:black;
+}
 
 .grid-container2 {
     display: grid;
     grid-template-areas: 
-        'ruta1 ruta2'
-        'ruta1 ruta2'
-        'ruta3 ruta3'; 
+        'time time time'
+        'weather datadiv .'
+        'weather ruta1 ruta2 '
+        'ruta3 ruta3 ruta3'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
     grid-gap: 2em;
@@ -174,3 +219,19 @@ text-decoration: none;
     
         
 }
+
+.button {
+    
+  background-color: #3366ff;
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+    
+}
+  

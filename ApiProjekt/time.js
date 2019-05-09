@@ -13,7 +13,7 @@
         .then(data =>
         {
             let divtag = document.createElement('p');
-            divtag.innerHTML = `${data.datetime.substring(0,10)} <br>Klockan är ${data.datetime.substring(11,16)} `;
+            divtag.innerHTML = `<div class ="timeNow"> ${data.datetime.substring(11,16)} </div><br> <div class ="date">[ ${data.datetime.substring(0,10)} ] </div>  `;
             datadivTime.appendChild(divtag);
         
             
