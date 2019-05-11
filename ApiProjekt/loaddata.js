@@ -23,50 +23,34 @@
               
               if(data.isHome==true)
                 {
+                     divtag.innerHTML = `<br><font color="green" size="7">${data.name} </font><font color="grey" size="6">
+                        är ${data.Mood} idag </font>`; 
+                    datadiv.appendChild(divtag);
                     
-                        divtag.innerHTML = `<hr><font color="green" size="7">${data.name} </font> 
-                        <font color="grey" size="6">
-                        är ${data.Mood} idag </font> 
-                        <br>
-
-                         <button type="button" class ="button"  onclick="changeFunction(true, ${data.id})"> Hemma</button>  
-                        <button type="button" class ="button"   onclick="changeFunction(false, ${data.id})"> Går ut</button> 
-                        <button type="button" class ="button" onclick="deleteFunction(${data.id})"> Radera</button>
-
-                           | | | 
-
-                        <button type="button" class ="button" onclick ="changeFunctionMood('SUPERGLAD', ${data.id})">  Superglad </button>
-                         <button type="button" class ="button" onclick="changeFunctionMood('glad', ${data.id})">  Glad </button>
-                         <button type="button" class ="button" onclick="changeFunctionMood('sur', ${data.id})">  Sur </button>
-                          <button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button><hr>`;
-                        datadiv.appendChild(divtag);
                 }
               else
               {
-                  // person & humör
-                       divtag.innerHTML = `<hr><font color="red" size="7">${data.name} </font>
+                     divtag.innerHTML = `<br><font color="red" size="7">${data.name} </font><font color="grey" size="6">
+                        är ${data.Mood} idag </font>`; 
+                    datadiv.appendChild(divtag);
+                  
+              }
+              
+               let divtag1 = document.createElement('div');
+                 divtag1.innerHTML = ` 
+                        <br><div class="buttonss">
 
-                        <font color="grey" size="6">
-                        är ${data.Mood} idag </font> 
+                         <button type="button" class ="button1"  onclick="changeFunction(true, ${data.id})"> Hemma</button>  
+                        <button type="button" class ="button1"   onclick="changeFunction(false, ${data.id})"> Går ut</button> 
+                        <button type="button" class ="button1" onclick="deleteFunction(${data.id})"> Radera</button>
+
                         <br>
-                        
-
-                                 <button type="button" class ="button"  onclick="changeFunction(true, ${data.id})"> Hemma</button>  
-                        <button type="button" class ="button"   onclick="changeFunction(false, ${data.id})"> Går ut</button> 
-                        <button type="button" class ="button" onclick="deleteFunction(${data.id})"> Radera</button>
-
-                           | | | 
 
                         <button type="button" class ="button" onclick ="changeFunctionMood('SUPERGLAD', ${data.id})">  Superglad </button>
                          <button type="button" class ="button" onclick="changeFunctionMood('glad', ${data.id})">  Glad </button>
                          <button type="button" class ="button" onclick="changeFunctionMood('sur', ${data.id})">  Sur </button>
-                          <button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button><hr>`;
-                  
-                        datadiv.appendChild(divtag);
-                  
-              
- 
-              }
+                          <button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button></div>`;
+                        datadiv.appendChild(divtag1);
               
           })
         });
