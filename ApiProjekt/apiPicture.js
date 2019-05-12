@@ -15,11 +15,17 @@
         var W = data.width*0.1;
         var H = data.height*0.1;
         var PicUrl = data.urls.raw;
+        var A = data.user.links.html;
+        var name = data.user.name;
             
         
             let divtag = document.createElement('p');
-            divtag.innerHTML = `<img src="${PicUrl}" width="${W}" height="${H}">`;
+            divtag.innerHTML = `<img src="${PicUrl}" width="400" alt="Photos by Unsplash"> <br>Photo by <a href="${A}"> ${name}</a> on <a href="https://unsplash.com/"> Unsplash </a>`;
             datadivPic.appendChild(divtag);
+        
         
         })
 
+     /*let divtag = document.createElement('p');
+            divtag.innerHTML = `<img src="${PicUrl}" width="${W}" height="${H}" alt="Photos by Unsplash"> <br>Photo by <a href="${A}"> ${name}</a> on <a href="https://unsplash.com/"> Unsplash </a>`;
+            datadivPic.appendChild(divtag); */

@@ -7,8 +7,8 @@
     // Nu ligger den i en funktion, vilket gör att vi kan köra den när vi vill.
     // Efter varje funktion nedan (home, change och delete) så körs den här funktionen för att uppdatera listan
     function loadData() {
-    const datadiv = document.getElementById('datadiv');
-    const datadiv2 = document.getElementById('datadiv');
+    const datadiv = document.getElementById('inputdata');
+    const datadiv2 = document.getElementById('inputdata');
         
       datadiv.innerHTML = '';
       fetch(uri)
