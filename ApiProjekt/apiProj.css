@@ -132,14 +132,14 @@ text-decoration: none;
 
 /* GRIDS 2!! */
 
-.ruta1 { grid-area: ruta1;
+.slinfo { grid-area: slinfo;
     padding: 2em;
     background-color: white;
     border-top: 20px solid #48D1CC;
     padding-bottom: 20em;
 }
 
-.ruta2 { grid-area: ruta2; 
+.kris { grid-area: kris; 
     padding: 2em;
     background-color: white;
     border-top: 20px solid #48D1CC;
@@ -149,9 +149,16 @@ text-decoration: none;
     padding: 2em;
     background-color: white;
     border-top: 20px solid #f5a3d7;
-    padding-bottom: 20em;
+    border-bottom: 20px solid #f5a3d7;
     color:black;
 }
+
+.ruta3 > img{
+    
+    width: 100px;
+    height: 100px;
+}
+
 
 .time { grid-area: time; 
     
@@ -236,10 +243,6 @@ text-decoration: none;
     
 }
 
-.krisinfo
-{
-    
-}
 
 .area{
     
@@ -252,9 +255,9 @@ text-decoration: none;
 .grid-container2 {
     display: grid;
     grid-template-areas: 
-        'time time time'
-        'weather datadiv ruta2'
-        'ruta3 ruta1 ruta2'; 
+        'time time time time'
+        'weather datadiv slinfo kris'
+        'weather ruta3 slinfo kris'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
     grid-gap: 2em;
@@ -271,41 +274,64 @@ text-decoration: none;
         
 }
 
+
+
+/* ALLT TILL SL RUTA */
+
+.buss {
+    
+font-size: 18px;
+margin-left: 5em;
+      
+}
+
+.bussTid{
+    font-size: 18px;
+   float:left;
+}
+
+.tidTabell {
+    
+    float:right;
+}
+
+
+
+/* till knappar */
 .button {
  
 height:30px;
 width:90px;
 background-color: #3366ff;
 border: none;
-  color: white; 
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  cursor: pointer;
-    margin-top: 5px;
+color: white; 
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+cursor: pointer;
+margin-top: 5px;
     
 }
 
 .button1 {
     
-    height:30px;
-    width:90px;
-  background-color: #3366ff;
-   border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  cursor: pointer;
-    
+height:30px;
+width:90px;
+background-color: #3366ff;
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+cursor: pointer; 
     
 }
 
 .button:hover, .button1:hover{
-      background-color: #0000e6;
     
-    
+background-color: #0000e6;
+       
 }
   

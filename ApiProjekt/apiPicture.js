@@ -1,0 +1,25 @@
+    
+
+    const uriPic = 'https://cors-anywhere.herokuapp.com/https://api.unsplash.com/photos/random/?client_id=fc0e57208b141cb589ed164559f4195d55d99d917f192f32d25ff5c3e0fd3dc5';
+
+    const datadivPic = document.getElementById('picture');
+
+    fetch(uriPic)
+    .then(response =>
+        {
+            return response.json()
+        })
+        .then(data =>
+        {
+       
+        var W = data.width*0.1;
+        var H = data.height*0.1;
+        var PicUrl = data.urls.raw;
+            
+        
+            let divtag = document.createElement('p');
+            divtag.innerHTML = `<img src="${PicUrl}" width="${W}" height="${H}">`;
+            datadivPic.appendChild(divtag);
+        
+        })
+
