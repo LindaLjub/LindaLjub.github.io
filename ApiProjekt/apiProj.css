@@ -3,7 +3,7 @@
 
 body {
     
-     
+
 }
 
                     /* ----   ------ Grind container 1 ------ -----  */
@@ -94,7 +94,8 @@ body {
     padding: 2em;
     background-color: #e6e6e6;
     border-top: 20px solid #8c8c8c;
-    min-width: 275px;}
+    min-width: 275px;
+    max-width: 310px;}
 
 .buss {  
 font-size: 18px;
@@ -107,17 +108,14 @@ margin-left: 5em; }
 .tidTabell {
     float:right; }
 
-.hrGrej > hr
-{
-    color: #48D1CC;
-}
 
 /* ------------ Krisinfo div */
 .kris { 
     grid-area: kris; 
     padding: 2em;
     background-color: white;
-    border-top: 20px solid #48D1CC; }
+    border-top: 20px solid #48D1CC;
+    max-width: 310px;}
 
 
 .area{
@@ -128,7 +126,8 @@ margin-left: 5em; }
 
 
 /* ------------ Bild 1 div */
-.picture { grid-area: picture; 
+.picture { 
+    grid-area: picture; 
     padding: 2em;
     background-color: white;
     border-top: 20px solid #f5a3d7;
@@ -208,25 +207,13 @@ margin-left: 5em; }
 
 
 
-/* ------------  news DIV div */
-
-.news { 
-    grid-area: news; 
-    color:black;
-    padding: 2em;
-    background-color: white;
-    border-top: 20px solid #48D1CC;
-    text-align: left;
-}
-
-
-
 /* ------------ INPUT div, HEMMA/HUMÖR */
 
 .inputdata { 
     grid-area: inputdata; 
-    text-align: left;}
-
+    text-align: left;
+}
+    
 
 .buttonss {
     padding-left: 20px;
@@ -288,6 +275,30 @@ margin-left: 5em; }
     cursor: pointer; }
 
 
+/* ------------  meddelanden div */
+
+.input2 {
+    grid-area: input2; 
+    
+    
+}
+
+.input2 > input{
+    
+    width: 300px;
+    height: 30px;
+}
+
+.messages { 
+    grid-area: news; 
+    color:black;
+    padding: 2em;
+    background-color: white;
+    text-align: left;
+}
+
+
+
 /* ------------ grids 2 */
 
 .grid-container2 {
@@ -298,7 +309,7 @@ margin-left: 5em; }
         'kris more weather'
         'kris picture picture2'
         'slinfo picture jokes'
-        'slinfo news jokes'
+        'slinfo input2 jokes'
         'slinfo news jokes'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 

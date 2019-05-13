@@ -24,7 +24,7 @@
               if(data.isHome==true)
                 {
                      divtag.innerHTML = `<br><font color="green" size="7">${data.name} </font><font color="grey" size="6">
-                        är ${data.Mood} idag </font>`; 
+                        är ${data.Mood} idag </font> <br>`; 
                     datadiv.appendChild(divtag);
                     
                 }
