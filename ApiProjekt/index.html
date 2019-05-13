@@ -34,15 +34,26 @@
     <!-- ruta 4 , grid container 2- -->       
     <div class="four">
 
-            <!-- bortkommenterat tills det behövs -->
-            <!-- Ny post: <input type="text" id="name"/> <a href="#" onclick="createFunction(true)">Är Hemma</a> <a href="#" onclick="createFunction(false)">Är inte hemma</a> <br> -->
 
              <!--Här börjar grid-container 2 -->      
           <div class="grid-container2">
 
               <!-- input hemma/humör -->
-              <div class ="inputdata" id="inputdata"></div>
+              <div class ="inputdata" id="inputdata">
+              </div>
+              
+              
+              <!-- lägg till en person -->
+              <div class="more">
+                  <h2>Lägg till person</h2><hr><br>
+                Namn: <input type="text" id="name"/>
+                  <br><br>
+        <button type="button" class ="button3" onclick="createFunction(true)"> Hemma</button>    
+        <button type="button" class ="button3" onclick="createFunction(false)"> Inte Hemma</button>
+        <br></div>
 
+          
+              
               <!-- väder -->
               <div class="weather" id="weatherInfo">
               <h2>Väder</h2><hr><br>
@@ -66,10 +77,10 @@
               <!-- div till nyheter -->
               <div class="news" id="news">
                 </div>
+              
 
               <!-- div till jokes -->
               <div class ="jokes" id="jokes"><h2>Jokes</h2><hr></div>
-              
               
               
               
@@ -83,26 +94,26 @@
           <!--- Alla Script, bortkommenterat så länge-->
           
 <!-- till SL -->
-<!--<script src="apiSl.js" type="text/javascript"></script>-->
+<!--<script src="apiSl.js" type="text/javascript"></script> -->
 
 <!-- Load hela programmet-->
-<!--<script src="loaddata.js" type="text/javascript"> </script>
+<!-- <script src="loaddata.js" type="text/javascript"> </script> 
     
 <!-- Ändra hemma/inte hemma-->
-<!--<script src="changeHome.js" type="text/javascript"> </script>
+<!-- <script src="changeHome.js" type="text/javascript"> </script>
    
 <!-- Ändra mood-->
-<!--<script src="changeMood.js" type="text/javascript"> </script>
+<!-- <script src="changeMood.js" type="text/javascript"> </script>
     
 <!-- Skapa en ny-->
-<!--<script src="create.js" type="text/javascript"> </script>
+<!-- <script src="create.js" type="text/javascript"> </script>
     
 <!-- Ta bort-->
-<!--<script src="delete.js" type="text/javascript"> </script>
+<!-- <script src="delete.js" type="text/javascript"> </script> 
     
         
 <!-- Till tid och namnsdag-->
-<!--<script src="time.js" type="text/javascript"> </script>
+<!--<script src="time.js" type="text/javascript"> </script> -->
     
 <!-- Till väder-->
 <!--<script src="weather.js" type="text/javascript"> </script>
@@ -114,14 +125,11 @@
 <!--<script src="apiPicture.js" type="text/javascript"> </script>
           
 <!-- Till bild2-->
-<!--<script src="apiPicture2.js" type="text/javascript"> </script>
- 
-<!-- Till nyheter-->
-<!--<script src="news.js" type="text/javascript"> </script>
+<!--<script src="apiPicture2.js" type="text/javascript"> </script> -->
           
           
 <!-- Till Jokes-->
-<!--<script src="apiJoke.js" type="text/javascript"> </script>
+<!--<script src="apiJoke.js" type="text/javascript"> </script>-->
           
     </body>
 </html>

@@ -14,7 +14,7 @@ body {
     grid-area: box1;  
     padding: 0.5em; 
     background-color: rgb(0, 0, 0); 
-    border-bottom: 0.5px solid #C71585; 
+    border-bottom: 1.5px solid #C71585; 
     text-indent: 2em; }
 
 .one > a {
@@ -33,7 +33,7 @@ body {
     grid-area: box2;  
     background-color: rgb(240, 240, 240);  
     background-image: url(plumage-176723_1920.jpg);
-    background-position: right;
+    background-position: left;
     font-size: 60px;
     padding-left: 80px;
     padding-right: 100px; 
@@ -94,7 +94,7 @@ body {
     padding: 2em;
     background-color: #e6e6e6;
     border-top: 20px solid #8c8c8c;
-    column-width: 25em;}
+    min-width: 275px;}
 
 .buss {  
 font-size: 18px;
@@ -107,7 +107,10 @@ margin-left: 5em; }
 .tidTabell {
     float:right; }
 
-
+.hrGrej > hr
+{
+    color: #48D1CC;
+}
 
 /* ------------ Krisinfo div */
 .kris { 
@@ -132,6 +135,7 @@ margin-left: 5em; }
     border-bottom: 20px solid #f5a3d7;
     color:black;
     text-align: center;
+     min-width: 260px;
 }
 
 
@@ -142,7 +146,8 @@ margin-left: 5em; }
     border-top: 20px solid #48D1CC;
     border-bottom: 20px solid #48D1CC;
     color:black;
-    text-align: center; }
+    text-align: center;
+    max-width: 275px; */}
 
 
 /* ------------ Tid och namnsdag div */
@@ -158,15 +163,15 @@ margin-left: 5em; }
     float:inherit; }
 
 .dag {
-    font-size: 25px;
+    font-size: 20px;
     float: right;
-    margin-right: 5em; }
+    margin-right: 3em; }
 
 
 .namn {
-    font-size: 25px;
+    font-size: 20px;
     float: left;
-    margin-left: 5em; }
+    margin-left: 3em; }
 
 
 /* ------------ väder div */
@@ -176,7 +181,8 @@ margin-left: 5em; }
     padding: 2em;
     background-color: white;
      border-top: 20px solid #f5a3d7;
-    text-align: center; }
+    text-align: center; 
+    max-width: 275px;}
 
 .weather > h2{
     text-align: left; }
@@ -188,17 +194,6 @@ margin-left: 5em; }
     font-size: 17px; }
 
 
-/* ------------ Nyheter div */
-
-.news { 
-    grid-area: news; 
-    color:black;
-    padding: 2em;
-    background-color: white;
-    border-top: 20px solid #f5a3d7;
-    text-align: center;
-}
-
 /* ------------ jOKES DIV div */
 
 .jokes { 
@@ -206,10 +201,23 @@ margin-left: 5em; }
     color:black;
     padding: 2em;
     background-color: white;
-    border-top: 20px solid #f5a3d7;
+    border-top: 20px solid #48D1CC;
     text-align: left;
+    max-width: 275px;
 }
 
+
+
+/* ------------  news DIV div */
+
+.news { 
+    grid-area: news; 
+    color:black;
+    padding: 2em;
+    background-color: white;
+    border-top: 20px solid #48D1CC;
+    text-align: left;
+}
 
 
 
@@ -217,7 +225,7 @@ margin-left: 5em; }
 
 .inputdata { 
     grid-area: inputdata; 
-    text-align: left; }
+    text-align: left;}
 
 
 .buttonss {
@@ -256,16 +264,42 @@ margin-left: 5em; }
     background-color: #0000e6;}
 
 
+/* ------------  input form DIV div */
+
+.more { 
+    grid-area: more; 
+    color:black;
+    padding: 2em;
+    background-color: white;
+    border-top: 20px solid #48D1CC;
+    text-align: left;
+}
+
+.button3 { 
+    height:30px;
+    width:100px;
+    background-color: #3366ff;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer; }
+
 
 /* ------------ grids 2 */
 
 .grid-container2 {
     display: grid;
     grid-template-areas: 
-        'time time time time'
-        'kris inputdata slinfo weather'
-        'kris picture slinfo picture2'
-        'jokes picture news picture2'; 
+        'time time time'
+        'kris inputdata weather'
+        'kris more weather'
+        'kris picture picture2'
+        'slinfo picture jokes'
+        'slinfo news jokes'
+        'slinfo news jokes'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
     grid-gap: 2em;

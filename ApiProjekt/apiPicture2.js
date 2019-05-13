@@ -19,7 +19,7 @@
             
         
             let divtag = document.createElement('p');
-            divtag.innerHTML = `<img src="${PicUrl2}" width="400" alt="Photos by Unsplash"> <br>Photo by <a href="${A}"> ${name}</a> on <a href="https://unsplash.com/"> Unsplash </a>`;
+            divtag.innerHTML = `<img src="${PicUrl2}" width="250" alt="Photos by Unsplash"> <br>Photo by <a href="${A}"> ${name}</a> on <a href="https://unsplash.com/"> Unsplash </a>`;
             datadivPic2.appendChild(divtag);
         
         

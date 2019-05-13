@@ -16,7 +16,7 @@
             let jokes3 = data.ResponseData.Buses
             return jokes3.map(function (jokeobj3)
             {
-                info3.innerHTML += `<br><b><div class ="bussTid">${jokeobj3.DisplayTime} </div></b><div class="tidTabell"> [ ${jokeobj3.TimeTabledDateTime.substring(11,16)} ]</div> <div class="buss">${jokeobj3.LineNumber} ${jokeobj3.Destination} </div>`;
+                info3.innerHTML += `<br><b><div class ="bussTid">${jokeobj3.DisplayTime} </div></b><div class="tidTabell"> [ ${jokeobj3.TimeTabledDateTime.substring(11,16)} ]</div> <div class="buss">${jokeobj3.LineNumber} ${jokeobj3.Destination} </div><hr>`;
                 
             
 
