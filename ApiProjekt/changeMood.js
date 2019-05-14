@@ -1,15 +1,18 @@
 
+    // en funktion som ändrar humör.
+     // skickar med ett id, och en humörvariabel variabel.
   function changeFunctionMood(hej, id) {
       var data = {Mood: hej }
 
-      // skickar med hela uri och även id för att veta vilken som ska ändras.
-      // metoden put ändrar värdet
+  
+      // uri:en får id, ändrar rätt person.
+      // PUT - ändrar värdet.
       fetch(uri + "/" + id,
         {
-          method: "PUT", // *GET, POST, PUT, DELETE, etc.
-          mode: "cors", // no-cors, cors, *same-origin
-          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-          credentials: "same-origin", // include, *same-origin, omit, 
+          method: "PUT", 
+          mode: "cors", 
+          cache: "no-cache", 
+          credentials: "same-origin", 
 
           headers:
           {
@@ -20,8 +23,7 @@
         }).then(res => res.json())
         .then(res => console.log(res))
 
-        // Eftersom MockAPI har en liten fördröjning så låter vi sidan uppdateras först efter 
-        // en halv sekund.
+     // en fördröjning på en 0,5 sek så att mockapi hinner uppdateras.
       setTimeout(() => {
         loadData();
       }, 500);

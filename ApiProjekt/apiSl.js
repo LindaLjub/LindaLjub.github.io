@@ -2,10 +2,9 @@
     const url3 = "https://cors-anywhere.herokuapp.com/http://api.sl.se/api2/realtimedeparturesV4.json?key=0d6124e00bc54c46904b5574c9e81b44&siteid=4122&timewindow=60"; 
     var text3 = "";
 
-    // jokes nedanför är namnet på diven.
     const info3 = document.getElementById('slinfo');
     
-    // hämtar från url
+    // hämtar från url3
     fetch(url3)
     // får ett respons som vi gör till json format
     .then((resp) => resp.json())
@@ -16,6 +15,8 @@
             let jokes3 = data.ResponseData.Buses
             return jokes3.map(function (jokeobj3)
             {
+                // visar fram all info.
+                // divar skapade för att style:a med CSS
                 info3.innerHTML += `<br><b><div class ="bussTid">${jokeobj3.DisplayTime} </div></b><div class="tidTabell"> [ ${jokeobj3.TimeTabledDateTime.substring(11,16)} ]</div> <div class="buss">${jokeobj3.LineNumber} ${jokeobj3.Destination} </div><hr>`;
                 
             
