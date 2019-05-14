@@ -36,7 +36,6 @@
     
     
     const datadivTime = document.getElementById('time');
-
     const uriDag = 'https://cors-anywhere.herokuapp.com/https://api.dryg.net/dagar/v2.1/';
 
 
