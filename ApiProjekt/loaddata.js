@@ -37,7 +37,7 @@
 
                         <br>
 
-                        <button type="button" class ="button" onclick ="changeFunctionMood('SUPERGLAD', ${data.id})">  Superglad </button><button type="button" class ="button" onclick="changeFunctionMood('glad', ${data.id})">  Glad </button> <button type="button" class ="button" onclick="changeFunctionMood('sur', ${data.id})">  Sur </button><button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button></div>`;
+                        <button type="button" class ="button" onclick ="changeFunctionMood('SUPERGLAD', ${data.id})">  Superglad </button><button type="button" class ="button" onclick="changeFunctionMood('glad', ${data.id})">  Glad </button><button type="button" class ="button" onclick="changeFunctionMood('sur', ${data.id})"> Sur </button><button type="button" class ="button" onclick="changeFunctionMood('ARG', ${data.id})"> Arg </button></div>`;
                         datadiv.appendChild(divtag1);
               
           })
