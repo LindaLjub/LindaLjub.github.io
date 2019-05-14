@@ -1,4 +1,4 @@
-  const uriMessage = 'http://5cd130aed4a78300147be590.mockapi.io/Message';
+  const uriMessage = 'https://5cd130aed4a78300147be590.mockapi.io/Message';
 
 
 loadMessage();
