@@ -94,8 +94,8 @@ body {
     padding: 2em;
     background-color: #e6e6e6;
     border-top: 20px solid #8c8c8c;
-    min-width: 275px;
-    max-width: 310px;}
+    width: 90%;
+    }
 
 .buss {  
 font-size: 18px;
@@ -115,7 +115,8 @@ margin-left: 5em; }
     padding: 2em;
     background-color: white;
     border-top: 20px solid #48D1CC;
-    max-width: 310px;}
+    width: 90%;
+    }
 
 
 .area{
@@ -134,7 +135,6 @@ margin-left: 5em; }
     border-bottom: 20px solid #f5a3d7;
     color:black;
     text-align: center;
-     min-width: 260px;
 }
 
 
@@ -145,8 +145,7 @@ margin-left: 5em; }
     border-top: 20px solid #48D1CC;
     border-bottom: 20px solid #48D1CC;
     color:black;
-    text-align: center;
-    max-width: 275px; */}
+    text-align: center;}
 
 
 /* ------------ Tid och namnsdag div */
@@ -180,8 +179,7 @@ margin-left: 5em; }
     padding: 2em;
     background-color: white;
     border-top: 20px solid #f5a3d7;
-    text-align: center; 
-    max-width: 275px;}
+    text-align: center; }
 
 .weather > h2{
     text-align: left; }
@@ -202,7 +200,6 @@ margin-left: 5em; }
     background-color: white;
     border-top: 20px solid #48D1CC;
     text-align: left;
-    max-width: 275px;
 }
 
 
