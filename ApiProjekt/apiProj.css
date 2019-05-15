@@ -94,7 +94,6 @@ body {
     padding: 2em;
     background-color: #e6e6e6;
     border-top: 20px solid #8c8c8c;
-    width: 90%;
     }
 
 .buss {  
@@ -115,7 +114,7 @@ margin-left: 5em; }
     padding: 2em;
     background-color: white;
     border-top: 20px solid #48D1CC;
-    width: 90%;
+  
     }
 
 
@@ -209,6 +208,7 @@ margin-left: 5em; }
 .inputdata { 
     grid-area: inputdata; 
     text-align: left;
+    padding-left: 1em;
 }
     
 
@@ -314,10 +314,10 @@ margin-left: 5em; }
         'slinfo news jokes'; 
     
 /* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
-    grid-gap: 2em;
+    grid-gap: 1em;
    
 /* grid-column-gap, mellanrum mellan boxarna sidleds. */ 
-    grid-column-gap: 2em;    
+    grid-column-gap: 1em;    
 }
 
   /* Detta sker innanför alla boxarna */
@@ -327,7 +327,20 @@ margin-left: 5em; }
 
 
 
+.kris, .slinfo {
+      
+    width: 19em;
+}
 
+.inputdata, .more, .picture, .input2, .news {
+    
+    width: 22em;
+}
+
+.weather, .picture2, .jokes {
+    
+    width: 16em;
+}
 
 
   
