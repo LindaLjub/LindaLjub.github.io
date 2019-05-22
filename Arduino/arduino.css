@@ -80,10 +80,12 @@ body{
     background-position: left;
 }
 
-.info { grid-area: info;
+.info { 
+    grid-area: info;
+    text-align: left;
 
-    
 }
+
 
 .grid-container {
     display: grid;

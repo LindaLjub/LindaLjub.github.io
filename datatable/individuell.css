@@ -1,0 +1,190 @@
+
+body {
+        
+/* definerar vad som sker i body (all text)*/  
+    font-size: 13px; 
+    font-family: Georgia, serif;
+     background-color: rgb(240, 240, 240); 
+  
+}
+
+h1 {
+    font-size: 25px;
+    color: black;
+    font-family: "Times New Roman", serif;
+    text-shadow: .1em .1em .10em darkgrey; 
+    text-decoration-line: overline; 
+    
+    
+}
+
+
+h2 { 
+    
+    font-size: 15px;
+    color: black;
+    font-family: "Times New Roman", serif;
+    text-shadow: .1em .1em .10em grey; 
+   
+    }
+
+
+h3 {
+    
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+    text-shadow: .1em .1em .10em grey; 
+}
+
+
+
+/* Formulär */ 
+input[type=text] {
+    
+    border: 2px solid #536D6C;
+    border-style: ridge; 
+    border-radius: 3px; 
+         
+}
+
+
+
+/* till länkar */
+
+a:link { color: black;}
+a:hover { color: white; } 
+
+/* tar bort linjen under länkarna */
+a {
+    text-decoration: none; 
+    color: black;
+    text-shadow: .2em .2em .10em lightgrey;
+}
+
+
+
+/* Allt till grids */
+
+
+/* alla div i index får ett värde, och en position*/ 
+.topp { grid-area: topp;      
+        
+background: linear-gradient(#0079C4, #001B49); 
+text-align: left;   
+padding: 0.5em; 
+      text-indent: 6em; 
+
+}
+
+
+.header { grid-area: header;
+        text-align: left; 
+    text-indent: 6em; 
+}
+
+
+.sida1 { grid-area: box0;  padding: 2em; 
+    
+    
+    
+
+}
+.item1 { grid-area: box1; padding: 2em;  
+ 
+   text-align: left;
+    
+                
+    background-color: rgba(128,128,128, 0.3); 
+}
+.item2 { grid-area: box2; padding: 2em; 
+   
+   text-align: left;
+    background-color: rgba(128,128,128, 0.3); 
+    
+} 
+.item3 { grid-area: box3; padding: 2em; 
+   text-align: left;
+    background-color: rgba(128,128,128, 0.3); 
+}      
+
+.item4 { grid-area: box4; padding: 2em; 
+   text-align: left;
+    background-color: rgba(128,128,128, 0.3); 
+    
+    
+}
+.sida2 { grid-area: box5; padding: 2em; 
+   
+}
+
+
+.mitt { grid-area: mitt; 
+   padding: 1em;   
+
+}
+
+
+.footer { grid-area: footer;
+          padding: 2em; 
+          text-align: left; }
+
+
+.bottom { grid-area: bottom;    
+    background: linear-gradient(#0079C4, #001B49); 
+    font-size: 10px; 
+    text-align: left;
+     text-indent: 6em;
+
+}
+
+
+
+/* utanför, runt om boxarna, själva grid:en, position på boxarna */ 
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'topp topp topp topp topp topp topp topp topp'
+        'header header header header header header header header header' 
+        'box5 box1 box1 box1 mitt box2 box2 box2 box0'
+        'box5 box1 box1 box1 mitt box2 box2 box2 box0'
+        'box5 box3 box3 box3 mitt box4 box4 box4 box0'
+        'box5 footer footer footer footer footer footer footer box0'
+        'bottom bottom bottom bottom bottom bottom bottom bottom bottom'; 
+    
+/* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
+    grid-gap: 2em;
+   
+/* grid-column-gap, mellanrum mellan boxarna sidleds. */ 
+    grid-column-gap: 0.5em; 
+    
+   
+
+}
+ 
+  /* Detta sker innanför alla boxarna */
+    .grid-container > div {
+        
+    
+        
+}
+
+
+
+.topp a {
+    
+    font-size: 12px; 
+    color: black;
+    text-shadow: .1em .1em .10em darkgrey; 
+    background-color: lightgrey; 
+    padding: 1em; 
+    margin: 0.2em;
+    
+ 
+   
+    
+}
+
+.topp a:hover { color: white; }
+
+  

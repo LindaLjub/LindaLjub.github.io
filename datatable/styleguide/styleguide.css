@@ -1,0 +1,100 @@
+body { margin: 0;
+    padding: 0;
+    border: 0;
+} 
+
+/*design av huvudrubrik*/
+h1 { color: black; 
+    text-align: center; 
+    letter-spacing: 5px;
+    font-family: roboto;
+    background-color: lightblue;
+    font-size: 3em;
+
+}
+/*design av underrubriker*/
+h2 { color: black; 
+    font-family: roboto;
+    font-size: 1em;
+    
+}
+
+/*gridsystem*/
+.item0 { grid-area: header;
+}
+.item1 { grid-area: main1; }
+.item2 { grid-area: main2; } 
+.item3 { grid-area: main3; }
+.item4 { grid-area: main4; 
+
+/*specifika val av utseende för item4/ruta4*/
+text-align: center;     
+background-image: url(fjader.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.item5 { grid-area: main5; }
+.item6 { grid-area: main6; }
+.item8 { grid-area: main8; }
+.item7 { grid-area: footer;
+text-align: center; }
+
+/*det som sker runt gridsystemet och hur det ska visas*/
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header header header header header header header'
+        'main1 main1 main1 main1 main1 main1 main2 main2 main2 main2 main2 main2'
+        'main3 main3 main3 main3 main3 main3 main4 main4 main4 main4 main4 main4'
+        'main5 main5 main5 main5 main5 main5 main6 main6 main6 main6 main6 main6' 
+        'main8 main8 main8 main8 main8 main8 main8 main8 main8 main8 main8 main8'
+        'footer footer footer footer footer footer footer footer footer footer footer footer';
+    /*mellanrummet för rutorna*/    
+    grid-gap: 0.5em;
+    background-color: white;
+    grid-column-gap: 0.5em;
+        
+}
+
+/*insidan av gridsystem vad som sker i boxarna*/
+.grid-container >div { 
+    
+    padding: 1em;
+    border-radius: 10px;
+    border-color: darkslategray;
+    border-style: ridge;
+}
+/*design av forumlärr*/
+form {
+    font-size: 13px;
+    font-family: Georgia, serif; 
+}
+
+input[type=text] {
+    border: 3px solid lightblue;
+    border-style: ridge; 
+    width: 30%;
+}
+
+
+
+/*design av länkar*/
+a { text-decoration: none; }
+a:link { color: blue }
+a:visited { color: blue }
+a:hover { color: lightblue }
+a { font-weight: bold; }
+a { font-family: roboto; }
+
+
+
+
+/*all övrig textformatering som inte sker i någon rubrik*/
+body {
+    font-family: roboto;
+    font-size: 1em;
+    color: black;
+}
+
+  

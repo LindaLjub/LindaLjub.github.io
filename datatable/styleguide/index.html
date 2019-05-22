@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styleguide.css">
+      
+       <script src="jquery-3.3.1.min.js"></script>
+      
+    <script src="DataTables/datatables.min.js"></script>
+      
+<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css">  
+      
+      
+      
+    <script> $(document).ready( function () {
+    $('#table_exempel').DataTable();
+      } );
+             
+             
+      
+      </script> 
+      
+    <!-- Labb3 MTB 2018-->
+      <title>Style-guide</title>
+  </head>
+  <body>
+      
+      
+ <!-- allt innehåll i grid-contaiinern-->     
+<div class="grid-container"> 
+    
+ 
+<!--HEADER, BESKRIV HUVUDRUBRIKER OCH UNDERRUBRIKER-->   
+<div class="item0">
+    <h1>STYLE-GUIDE</h1> <!--Översta rubrik-->
+    <br>
+    <h1 id="rubrik">Detta är en huvudrubrik</h1>
+    <br>
+     <!--beskrivning av kod som ska visas på weddsidan och inte skrivas ut ex. &gt; är > -->
+    Huvudrubriker skrivs ut med: &lt;h1&gt;Detta är en huvudrubrik&lt;/h1&gt;
+    
+    <br>
+    <br>
+    Huvudrubrikerna ska ha färgen svart och en bakgrundsfärg.
+<br> Detta anpassas i CSS genom följande: 
+<br>    
+<br> h1 &#123; color: black&#59; 
+<br> text-align: center&#59; 
+<br> letter-spacing: 5px&#59;
+<br> font-family: roboto&#59;
+<br> background-color: lightblue&#59;
+font-size: 3em&#59;
+   <br> 
+ &#125;
+    
+    <br>
+    <br>
+    <br>
+    
+    <h2>Detta är en underrubrik</h2>
+    
+Den skrivs ut med: &lt;h2&gt;Detta är en underrubrik&lt;/h2&gt; 
+<br>
+<br>Och i CSS: 
+<br>h2 &#125; color: black&#59; 
+<br>font-family: roboto&#59;
+<br>font-size: 1em&#59;
+
+<br>&#125;
+    
+</div>
+    
+    
+
+<!--BOX1-BESKRIVER TYPOGRAFI/BRÖDTEXT OCH FÄRGER-->
+<div class="item1">
+    <h1 id="typsnitt">Typsnitt:</h1> <!--Till navigationsknapp, ankare-->
+
+<br>Utöver rubriker presenteras övrig text på sidan med typsnittet <br>Roboto och färgen svart. Det skrivs i CSS: 
+<br>body &#123;
+<br>font-family: roboto;
+<br>font-size: 1em;
+<br>color: black;
+<br> &#125;
+
+     
+</div>
+    
+    
+<!--BOX2-BESKRIVER NAVIGATION-->      
+<div class="item2">
+    
+<!--navigationslänkar till olika delar av sidan-->  
+  <h1 id="navigation">Navigation</h1> 
+    <br>
+    
+  <a href="#rubrik">Klicka här för att läsa om regler för Rubriker</a> 
+    <br>
+      <a href="#typsnitt">Klicka här för att läsa om regler för Typsnitt och Färger</a>
+    <br>
+    <a href="#navigation">Klicka här för att läsa om regler för Navigation</a>
+    <br>
+    <a href="#grid">Klicka här för att läsa om regler för Gridsystem</a>
+    <br>
+    <a href="#grafik">Klicka här för att läsa om regler för Bilder och Grafik</a>
+    <br>
+    <a href="#formular">Klicka här för att läsa om regler för Formulär</a>
+    
+    <br>
+    <br>
+    Navigationen fungerar genom en länk kopplat till ett id i underrubrikerna (dit sidan ska ta användaren) Det skrivs ut med:
+    <br>
+    <br>
+   &lt;a href="#navigation"&gt;Klicka här för att läsa om regler för Navigation&lt;/a&gt;
+    
+    <br>
+    <br>
+Id i rubriken skrivs:
+    <br>
+    <br>
+
+    &lt;h1 id="navigation"&gt;Navigation&lt;/h1&gt;
+    <br>
+    <br>
+    
+</div>   
+    
+    
+    
+ <!--BOX3-BESKRIVER GRIDSYSTEM-->     
+<div class="item3">
+    
+    <h1 id="grid">Gridsystem</h1> <!--Till navigationsknapp, ankare-->
+    <br>
+    Gridsystemet omfattar hela denna webbsida. Exemplet nedan visar 1 box inklusive Header och Footer. I html-dokumentet skrivs detta ut: 
+    <br>
+    <br>
+  &lt;div class="grid-container"&gt;
+<br>    
+<br>
+&lt;div class="item0"&gt; 
+<br>
+    <h2>--Innehållet i din Header placeras här--</h2>
+
+&lt;/div&gt; 
+
+&lt;div class="item1"&gt; 
+<br>
+    <h2>--Här placeras det du vill att boxen ska innehålla--</h2>
+
+&lt;/div&gt; &lt;div class="item7"&gt; 
+<br>
+    <h2>--Här placeras innehållet i footern--</h2>
+
+&lt;/div&gt;
+    
+    <br>
+    <br>
+    
+    <h2>Exemplet på gridsystemets CSS ser ut som följande:</h2>
+
+.grid-container &#123;<br>
+display: grid;<br>
+grid-template-areas:<br> 
+'header header header header header header header header header header header header'<br>
+'main1 main1 main1 main1 main1 main1 main1 main1 main1 main1 main1 main1'<br>
+'footer footer footer footer footer footer footer footer footer footer footer footer';<br>
+<br>
+grid-gap: 0.5em;
+background-color: white;
+grid-column-gap: 0.5em;
+<br>
+<br>    
+&#125;
+<br>
+<br>
+.grid-container &gt; div &#123;<br>
+background-image: url(fjader.jpg);<br>
+background-repeat: no-repeat;<br>
+background-attachment: fixed;<br>
+padding: 1em;<br>
+border-radius: 10px;<br>
+border-color: darkslategray;<br>
+border-style: ridge;<br>
+<br>
+<br>    
+&#125; 
+<br>
+<br>    
+  &lt;/div&gt;
+    
+</div>     
+    
+    
+    
+<!--BOX4-BESKRIVER BILDER/GRAFIK-->      
+<div class="item4">
+    <h1 id="grafik">Bilder och grafik</h1> <!--Till navigationsknapp, ankare-->
+    Den bild som visas i denna ruta specifieras för just denna ruta i CSS med följande kod:
+    <br>
+    <br>
+    .item4 &#123; grid-area: main4;
+    <br> 
+    <br>
+        background-image: url(fjader.jpg)&#59;
+   <br> background-repeat: no-repeat&#59;
+   <br> background-position: center&#59;
+   <br> background-attachment: fixed&#59; 
+    &#125;
+    
+    
+    <br>
+    <br>
+    Bakgrundsbilden visas här, den ska visas endast en gång (no-repeat), vara centrerad (background-position) och är fast dvs. behåller sin position (background-attachment). 
+
+</div> 
+    
+    
+    
+    
+<!--BOX4-BESKRIVER FORMULÄR-->    
+<div class="item5">
+    <h1 id="formular">Formulär</h1> <!--Till navigationsknapp, ankare-->
+    
+    Detta är ett exempel på hur ett formulär ska se ut på denna sida. Textrutan ska ha en ljusblå border med stilen ridge.
+    <h2>Form-element:</h2>   
+  
+
+ <!--Ett exempelformulär med ett inmatningsfält och en skicka-knapp-->      
+<form action="exempel.php" method="get"> Ett exempel på formulär.
+    <br> 
+    <br><input type="text" name="exempel"/> 
+    <br>
+    <br>
+    <input type="submit" id="submit" name="submit">
+    <br>  
+</form>
+    
+    
+    <br>
+    I html skrivs den ut som följande:
+    <br>
+    <br>
+    &lt;h2 id="form"&gt;Form-element:&lt;/h2&gt;  
+<br>    
+<br>&lt;form action="" method="get"&gt; Ett exempel på formulär.
+<br>&lt;input type="text" name="exempel"/&gt;
+<br>&lt;input type="submit" id="submit" name="submit"&gt;
+<br>&lt;/form&gt;
+    
+    <br>
+    <br>
+    CSS för formuläret skrivs:
+    <br>
+    <br>
+    form &#123;<br>
+    font-size: 13px;<br>
+    font-family: Georgia, serif;<br> 
+&#125;
+<br>
+<br>    
+input[type=text] &#123; <br>
+    border: 3px solid lightblue;<br>
+    border-style: ridge;<br> 
+    width: 30%;<br>
+&#125;<br>
+    
+</div>
+    
+    
+<!--BOX4-BESKRIVER LÄNKAR-->
+<div class="item6">
+    <h1>Länkar</h1>
+    Länkarna skrivs på följande sätt i html-dokumentet. 
+    <br>
+    <br>
+    &lt;a href="https://google.com"&gt;Denna länk tar dig till google.com&lt;/a&gt;
+    
+    <br>
+    <br>
+    Resultatet blir: 
+    <br>
+    <br>
+     <a href="https://google.com">Denna länk tar dig till google.com</a>
+   
+<br>
+<br>
+   Länkarna ska ha färgen blå och även behålla den färgen om länken blivit besökt. Länkarna ska reagera när muspekaren förs över och har därmed tilldelats en annan färg vid den interaktionen (a:hoover). De följer även samma typsnitt men ska vara i fetstil (font-weight: bold) 
+    <br>
+    <br>
+    Länkarnas CSS ser ut på följande vis.
+   <br>
+   <br>
+a { text-decoration: none&#59; &#125;<br>
+a:link { color: blue &#125;<br>
+a:visited { color: blue &#125;<br>
+a:hover { color: lightblue &#125;<br>
+a { font-weight: bold&#59; &#125;<br>
+a { font-family: roboto&#59; &#125;<br>
+    <br>
+    <br>
+    
+      </div>     
+    
+    
+<div class="item8">
+    
+    <h1>Tabeller</h1>
+  
+       <table id="table_exempel" class="display">
+    <thead>
+        <tr>
+            <th>Kolumn 1</th>
+            <th>Kolumn 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Exempel1</td>
+            <td>Exempel2</td>
+        </tr>
+        <tr>
+            <td>Exempel3</td>
+            <td>Exempel4</td>
+        </tr>
+        <tr>
+            <td>Exempel5</td>
+            <td>Exempel6</td>
+        </tr>
+        <tr>
+            <td>Exempel7</td>
+            <td>Exempel8</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+    -Tabeller används när mycket information, listor eller stor mängd data ska presenteras. Genom Java-scriptet kan listorna sorteras.
+    
+    <h2>HTML-koden ser ut som följande:</h2>
+   
+    <br>
+    &lt;table id="table_exempel" class="display"&gt;<br>
+    &lt;thead&gt;<br>
+        &lt;tr&gt;<br>
+            &lt;th&gt;Kolumn 1&lt;/th&gt;<br>
+            &lt;th&gt;Kolumn 2&lt;/th&gt;<br>
+        &lt;/tr&gt;<br>
+    &lt;/thead&gt;<br>
+    &lt;tbody&gt;<br>
+        &lt;tr&gt;<br>
+            &lt;td&gt;Exempel1&lt;/td&gt;<br>
+            &lt;td&gt;Exempel2&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+            &lt;td&gt;Exempel3&lt;/td&gt;<br>
+            &lt;td&gt;Exempel4&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+    &lt;/tbody&gt;<br>
+&lt;/table&gt;
+
+    <br>
+    <br>
+    <h2>Java-script ser ut som följande och återfinns i headern i index-filen:</h2>
+    
+    &lt;script&gt; $(document).ready( function () {<br>
+    $('#table_exempel').DataTable();<br>
+      } );<br>
+                
+      &lt;/script&gt;<br>
+    <br>
+    
+    <h2>I index-filen länkar vi till ett CSS-dokument, Java-script dokument och till jQuery i headern genom följande kod:</h2>
+    <br>
+    <br>
+    &lt;script src="jquery-3.3.1.min.js"&gt;&lt;/script&gt;<br>
+<br>
+    &lt;script type="text/javascript"<br> src="DataTables/datatables.min.js"&gt;&lt;/script&gt;<br>
+<br>     
+    &lt;link rel="stylesheet" type="text/css"<br> href="DataTables/datatables.min.css"&gt;<br>
+    
+    <br>
+    <br>
+    <h2>Ovanstående dokument som länkas har hämtats från (se länk):</h2>
+    
+   
+    <a href="http://jquery.com/download/">jQuery download</a>
+    <br>
+    <a href="https://datatables.net">Datatables.net</a>
+  
+    
+    
+    
+    
+    
+</div>
+    
+ <!--FOOTER BESKRIVER LÄNKAR-->     
+<div class="item7">
+<!--Valideringslänkar/checkar koden för css och html-->      
+<a href="https://validator.w3.org/check/referer">Validera HTML</a>
+<br>
+<a href="https://jigsaw.w3.org/css-validator/check/referer">Validera CSS</a>
+</div>    
+
+</div> <!--Här slutar grid-containern-->
+      
+</body>
+</html>
