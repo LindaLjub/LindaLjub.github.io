@@ -1,0 +1,212 @@
+
+body {
+        
+/* definera all text här*/  
+    /*font-size: 15px; */
+    font-family: Georgia, serif;
+    
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+    font-family: Georgia, serif;
+    text-shadow: .1em .1em .10em white; 
+    text-align: center;
+    
+}
+
+
+h2 { 
+    
+    font-size: 25px;
+    color: black;
+    font-family: Georgia, serif;
+    text-shadow: .2em .2em .10em lightgrey; 
+   
+    }
+
+
+h3 {
+    
+    font-size: 22px;
+    font-family: Georgia, serif;
+    text-shadow: .2em .2em .10em lightgrey; 
+}
+
+
+
+/* Formulär */ 
+input[type=text] {
+    
+    border: 2px solid #536D6C;
+    border-style: ridge; 
+    border-radius: 3px; 
+         
+}
+
+
+
+/* till länkar */
+
+a:link { color: black;}
+a:hover { color: white; } 
+
+/* tar bort linjen under länkarna */
+a {
+    text-decoration: none; 
+    color: black;
+    text-shadow: .2em .2em .10em lightgrey;
+}
+
+
+
+/* Allt till grids */
+
+
+/* alla div i index får ett värde, och en position*/ 
+.topp { grid-area: topp;      
+    
+   /* background: linear-gradient(#0079C4, #001B49); */ 
+    background: linear-gradient(#0079C4, #001B49);
+    padding: 0.5em;
+
+}
+
+.header { grid-area: header; 
+        text-align: center;  }
+
+
+.sida1 { grid-area: box0;  padding: 2.5em; 
+   
+    background-image: url(sida1.png);
+    background-repeat: no-repeat;
+    background-position: center top; 
+   
+    
+    
+
+}
+.item1 { grid-area: box1; padding: 0.5em;  
+   border: 3px solid white; 
+   border-style: ridge;
+   text-align: left;
+    
+                /* allt till bakgrund, bild, visas en gång, centrerad, flyttas ej */
+   
+    background-image: url(fjader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}
+.item2 { grid-area: box2; padding: 0.5em; 
+   border: 3px solid white; 
+   border-style: ridge;
+   text-align: left;
+   
+    
+            /* allt till bakgrund, bild, visas en gång, centrerad, flyttas ej */
+   
+    background-image: url(fjader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    
+} 
+.item3 { grid-area: box3; padding: 0.5em; 
+   border: 3px solid white; 
+   border-style: ridge;
+   text-align: left;
+    
+            /* allt till bakgrund, bild, visas en gång, centrerad, flyttas ej */
+   
+    background-image: url(fjader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}      
+
+.item4 { grid-area: box4; padding: 0.5em; 
+   border: 3px solid white; 
+   border-style: ridge;
+   text-align: left;
+    
+            /* allt till bakgrund, bild, visas en gång, centrerad, flyttas ej */
+   
+    background-image: url(fjader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}
+.sida2 { grid-area: box5; padding: 2.5em; 
+
+
+       /* allt till bakgrund, bild, visas en gång, centrerad, flyttas ej */
+   
+background-image: url(sida2.png);
+background-repeat: no-repeat;
+background-position: center top;
+   
+}
+
+
+
+
+
+.mitt { grid-area: mitt; 
+ 
+background-image: url(sida2.png);
+background-repeat: no-repeat;
+background-position: center;
+padding: 1.5em;
+}
+
+
+.footer { grid-area: footer; 
+          text-align: left; }
+
+
+.bottom { grid-area: bottom;    
+    background: linear-gradient(#0079C4, #001B49); 
+    font-size: 13px; 
+    text-align: center;
+
+}
+
+
+
+/* utanför, runt om boxarna, själva grid:en, position på boxarna */ 
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'topp topp topp topp topp topp topp topp topp'
+        'header header header header header header header header header' 
+        'box5 box5 box1 box1 mitt box2 box2 box0 box0'
+        'box5 box5 box1 box1 mitt box2 box2 box0 box0'
+        'box5 box5 box3 box3 mitt box4 box4 box0 box0'
+        'box5 box5 footer footer footer footer footer box0 box0'
+        'bottom bottom bottom bottom bottom bottom bottom bottom bottom'; 
+    
+/* grid-gap, mellanrum mellan boxarna Upp/ned. */ 
+    grid-gap: 0.5em;
+   
+/* grid-column-gap, mellanrum mellan boxarna sidleds. */ 
+    grid-column-gap: 0.5em; 
+    
+   
+
+}
+ 
+  /* Detta sker innanför alla boxarna */
+    .grid-container > div {
+        
+    
+        
+}
+
+
+
+
+
+  
