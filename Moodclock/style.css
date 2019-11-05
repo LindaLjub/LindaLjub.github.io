@@ -1,0 +1,34 @@
+
+
+/* Här är styling som gäller för hela sidan */
+body {
+  box-sizing: border-box;
+  font-family: Helvetica, "sans serif";
+  background-color: rgb(114, 212, 248);
+  margin: 0;
+}
+
+
+/* Här är styling som gäller för alla rubriker och texter */
+h1 {
+  margin: 20px;
+  font-size: 65px;
+}
+
+/* Här är styling för mood sektionen */
+
+.mood {
+  /* background-color: #ff726c; */ /* till tacksida?*/
+  padding: 125px 28px;
+  color: rgb(240, 170, 75);
+  text-align: center;
+}
+
+.tack {
+
+  padding: 125px 28px;
+  background-color: rgb(114, 212, 248);
+  text-align: center;
+  color: rgb(240, 170, 75);
+
+}
