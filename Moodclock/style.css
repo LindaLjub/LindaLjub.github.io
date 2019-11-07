@@ -1,25 +1,18 @@
-
-
-/* Här är styling som gäller för hela sidan */
-body {
-  box-sizing: border-box;
-  font-family: Helvetica, "sans serif";
-  background-color: rgb(114, 212, 248);
-  margin: 0;
+body{
+    background-color: rgb(114,212,248);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;;
+    margin-top: 200px;
 }
-
-
-/* Här är styling som gäller för alla rubriker och texter */
-h1 {
-  margin: 20px;
-  font-size: 65px;
+h1{
+    color: rgb(240,170,75);
+    text-align: center;
+    font-size: 100px;
+    word-spacing: 0,1px;
 }
-
-/* Här är styling för mood sektionen */
-
-.mood {
-  /* background-color: #ff726c; */ /* till tacksida?*/
-  padding: 125px 28px;
-  color: rgb(240, 170, 75);
-  text-align: center;
+.images{
+    text-align: center;
+    word-spacing: 3em;
+}
+.button{
+    
 }

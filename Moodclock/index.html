@@ -1,78 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <title>Prevas</title>
-
+    <title>Mood Clock</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-      <body>
-        <section class="mood">
-            <!--Rubrik/fråga?-->
-            <h1>Hur mår du idag?</h1>
-            <!-- bilder -->
-            <input type ="image" src="arg.png" alt="arg" value="Knapp" id="arg">
-            <input type ="image" src="neutral.png" alt="neutral" value="Knapp" id="neutral">
-            <input type ="image" src="glad.png" alt="glad" value="Knapp" id="glad">
-
-        </section>
-
-
-            <!-- miniscript till pop-up-->
-            <script type="Text/JavaScript">
-            // Letar upp knappen med id "test" och sparar den i variabeln knapp
-            var knappArg = document.getElementById("arg");
-            var knappNeutral = document.getElementById("neutral");
-            var knappGlad = document.getElementById("glad");
-
-            // Lägger på en event-handler, "onclick", som säger att funktionen "knappAlert" ska köras när 
-            // man klickar på knappen
-
-            knappArg.onclick = knappAlertArg;
-            knappNeutral.onclick = knappAlertNeutral;
-            knappGlad.onclick = knappAlertGlad;
-
-            // Gör funktionen knappAlert
-            function knappAlertNeutral()
-            {
-                openWin();
-            }
-
-            // Gör funktionen knappAlert
-            function knappAlertGlad()
-            {
-               openWin();
-            }
-
-            // Gör funktionen knappAlert
-            function knappAlertArg()
-            {
-                openWin();
-            }
-
-            // nytt fönster
-            function openWin() 
-            {
-                // öppna ett nytt fönster
-               //myWindow = window.open("https://www.w3schools.com", "myWindow", "top=500, right=100, width=800, height=400");  
-               myWindow = window.open("tack.html", "myWindow");
-
-                // stäng fönstret efter 2 sek
-               setTimeout(closeWin, 1500);
-
-            }
-
-            // stäng fönster
-            function closeWin() 
-            {
-                myWindow.close();   // Closes the new window
-            }
-
-        </script>
-
-    </body>
-
+<body>
+    <div class="header">
+        <h1>Hur mår du idag?</h1>
+    </div>
+    <div class="images">
+        <input type="image" src="arg.png" id="arg">
+        <input type="image" src="neutral.png" id="neutral">
+        <input type="image" src="glad.png" id="glad">
+    </div>
+    <div class="statistik">
+        <button type="button" id="adminButton">Hämta statistik</button>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
 </html>
