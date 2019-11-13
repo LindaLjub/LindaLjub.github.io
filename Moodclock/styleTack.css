@@ -1,0 +1,23 @@
+
+
+/* Här är styling som gäller för hela sidan */
+body {
+  box-sizing: border-box;
+  font-family: Helvetica, "sans serif";
+  background-color: rgb(234, 166, 223);
+  margin: 0;
+}
+
+
+/* Här är styling som gäller för alla rubriker och texter */
+h1 {
+  margin: 20px;
+  font-size: 65px;
+}
+
+.tack {
+  padding: 125px 28px;
+  text-align: center;
+  color: white;
+
+}
