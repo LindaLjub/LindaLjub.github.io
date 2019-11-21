@@ -1,0 +1,119 @@
+
+/* Denna externa Css-fil är gjord av Linda Lindgren, 2017.*/
+/* Examinationsarbete i Medieteknik A, Weddproduktion grund, mobil webbplats. */
+
+/* Bakgrundbilden (images/background5_1.jpg) som används för större skärmar (min-width: 40em) är gjord av mig, Linda Lindgren (pixlr). Bild images/linda.png, gjord av mig (pixlr), används som favicon. (Föreställer två stora L, står för Linda Lindgren.) */
+
+
+
+
+
+ /* Ingen bakgrundsbild för mindre skärm, tydligare med endast färg. */
+
+body {
+    background-color: #b8b8b8;
+    
+}
+
+
+
+
+h1 {
+    font-size: 30px;
+    font-family: Georgia, serif; 
+    text-shadow: .2em .2em .10em white;
+    font-weight: 900;
+    
+}
+
+
+/* STÖRRE/tydligare knappar och text för mobil! */
+
+ ul, #submit, #reset, #submit2, #reset2, #storlek, div label {
+    
+    font-size: 25px;
+   
+    
+}
+
+
+
+
+
+
+
+
+/* knapp till startsida */
+
+#startsida {
+    
+    color:#0606de;
+    font-size: 18px;    
+    font-family: Georgia, serif; 
+    text-shadow: .2em .2em .10em white;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+div.skriv, h1, address, div.pricka {
+    text-align: center;
+}
+
+
+label, address {
+    font-size: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    
+}
+
+
+
+/* formulär 2 */
+
+ul { 
+    
+    list-style-type: none;
+}
+
+
+
+
+
+
+   /* Till större skärmar */ 
+
+@media all and (min-width: 40em) {
+    
+    
+/* Bakgrundsbild stör formuläret från en mobil, använd endast till större skärmar. */
+    
+body {
+    
+    background-image: url(images/background5_1.jpg);
+    background-color: #b8b8b8;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+}
+    
+    
+    
+    
+/* Mindre knappar och text för större skärm! */
+
+ ul, #submit, #reset, #submit2, #reset2, #storlek, div label {
+    
+    font-size: 18px;
+   
+    
+}
+
+
+}
+

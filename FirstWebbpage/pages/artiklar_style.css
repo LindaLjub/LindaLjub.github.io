@@ -1,0 +1,172 @@
+/* Denna externa Css-fil är gjord av Linda Lindgren, 2017.*/
+/* Examinationsarbete i Medieteknik A, Weddproduktion grund, mobil webbplats. */
+
+/* Bakgrundbilden (images/background3_ced3eb.jpg) som används för större skärmar (min-width: 40em) är gjord av mig, Linda Lindgren (pixlr). De 3 bilder som används i texten är både tagna av mig (När jag var i Nepal, 2014) och även redigerade av mig (med pixlr). Bild images/linda.png, gjord av mig (pixlr), används som favicon. (Föreställer två stora L, står för Linda Lindgren.) */
+
+
+
+
+
+ /* Ingen bakgrundsbild för mindre skärm, tydligare med endast färg. */
+
+body {
+    background-color: #ced3eb;
+}
+
+
+h1, h2 {
+    
+    font-family: "Georgia", serif; 
+    text-shadow: 0 0 .20em white;
+}
+   
+
+
+article, nav, address, h2, h1 {
+    text-align: center;
+}
+
+
+
+
+
+a[target]
+{
+  color:deepskyblue;
+text-shadow: 0 0 .20em black; 
+}
+
+
+
+
+
+/* knappen till startsidan, .button*/
+
+.button {
+    
+    background-color: #8282f2;
+    color:black;
+    font-size: 16px;
+    padding: 15px 32px;
+    border-style:solid;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 15px;
+    
+}
+
+
+
+
+
+.start {
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+
+/* länkar "till toppen" */
+nav a {
+    
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+
+
+
+ /* Tydligare text för mindre skärm, article. */   
+
+article {
+    font: serif, "Georgia";
+    font-size: 25px;
+}
+
+
+
+blockquote:first-letter  {
+    font-size:200%; 
+}
+
+
+
+
+
+
+a {
+    text-decoration:none;
+    color: #341bbc;
+}
+
+a:hover {
+    color:blue;        
+        
+}
+
+
+
+
+
+
+
+address p {
+    font-weight: 900;
+    font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Till större skärmar */ 
+
+@media all and (min-width: 40em) {
+    
+    
+    
+/* Bakgrundsbild stör formuläret från en mobil, använd endast till större skärmar. */
+    
+body {
+    
+    background-image: url(images/background3_ced3eb.jpg);
+    background-color: #ced3eb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    
+    
+    
+    
+article blockquote { 
+    margin-left: 770px;
+    margin-right: 770px; 
+}
+    
+    
+    img {
+        position: center;
+    }  
+    
+    
+    
+ /* mindre text för större skärm. */
+    
+article {
+    
+    font-size: 17px;
+}
+    
+
+}
+
+
+

@@ -1,0 +1,201 @@
+/* Denna externa Css-fil är gjord av Linda Lindgren, 2017.*/
+/* Examinationsarbete i Medieteknik A, Weddproduktion grund, mobil webbplats. */
+
+/* Bakgrundbilden (pages/images/background5.jpg) som används för större skärmar (min-width: 40em) är gjord av mig, Linda Lindgren (pixlr). Bild images/linda.png, gjord av mig (pixlr), används som favicon. (Föreställer två stora L, står för Linda Lindgren.) */
+
+
+
+
+
+
+/* Style till mindre skärmar, mobilenheter */
+
+/* Ingen bakgrundsbild för mindre skärm, tydligare med endast färg. */
+
+body {
+    background-color: #ced4eb;
+
+    
+}
+
+h1 {
+    font-size: 45px;
+    
+}
+
+h1, h2 {
+    
+    font-family: "Georgia", serif; 
+    text-shadow: .1em .1em .20em white;
+}
+
+
+/* ALLT centrerat */
+* {
+    text-align: center;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #1102bc;
+    
+    
+}
+
+
+ /* Tydligare buttons/boxar till mobil */
+
+.button-1, .button-2, .button-3 {
+    
+    background-color: #a492f0;
+    color:black;
+    font-size: 25px;
+    padding: 15px 32px;
+    border-style:solid;
+    text-align: center;
+    
+}
+
+
+ address, #valid {
+    font-size: 25px;
+    border: 5px solid black;
+    background-color: #b4a7ea;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: black;
+     
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Till större skärmar */ 
+
+@media all and (min-width: 40em) {
+    
+    
+    
+/* Bakgrundsbild stör formuläret från en mobil, använd endast till större skärmar. */   
+    body {
+    
+    background-image: url(pages/images/background5.jpg);
+    background-color: #ced4eb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    
+
+
+
+    #utrymme1, #utrymme2, #utrymme3 {
+        display: none;
+        
+    }
+    
+    
+.button {
+    
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a:hover {
+    color:blue;
+        
+        
+}
+
+    
+    
+/* Mörkare färg, mer styling till större skärmar, Buttons. */     
+    
+
+.button-1 {
+    
+    background-color: black;
+    color:#8e8989;
+    font-size: 16px;
+    padding: 15px 32px;
+    border-style:solid;
+    text-align: center;
+    
+}
+
+.button-2 {
+    background-color: #554d4d;
+    color:black;
+    font-size: 16px;
+    padding: 15px 32px;
+    border-style:solid;
+    text-align: center;
+}
+
+.button-3 {
+    background-color: #969696;
+    color:black;
+    font-size: 16px;
+    padding: 15px 32px;
+    border-style:solid;
+    text-align: center;
+}
+
+    
+    
+   /* Mörkare färg, mer styling till större skärmar, boxar (adress och #valid). */  
+    
+ address {
+    font-size: 20px;
+    border: 5px solid gray;
+    padding: 0;
+    width: 300px;
+    height: 150px;
+    background-color: dimgray;
+    border-radius: 1px;
+    margin: 0 auto 0 auto;
+     
+  
+}
+
+
+#valid {
+    
+    font-size: 20px;
+    border: 5px solid #171717;
+    padding: 1px;
+    width: 200px;
+    height: 100px;
+    background-color: dimgray;
+    margin: 0 auto 0 auto; 
+    
+}
+    
+a[target=_self] {
+    background-color: red;
+}
+    
+    
+
+}

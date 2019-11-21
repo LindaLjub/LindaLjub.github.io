@@ -1,0 +1,133 @@
+/* Denna externa Css-fil är gjord av Linda Lindgren, 2017.*/
+/* Examinationsarbete i Medieteknik A, Weddproduktion grund, mobil webbplats. */
+
+/* Bakgrundbilden (images/background3_ced3eb.jpg) som används för större skärmar (min-width: 40em) är gjord av mig, Linda Lindgren (pixlr). Bild images/linda.png, gjord av mig i (pixlr), används som favicon och bild. (Föreställer två stora L, står för Linda Lindgren.) */
+
+
+
+ 
+
+
+
+
+
+
+/* Style till mindre skärmar, mobilenheter */
+
+/* Ingen bakgrundsbild för mindre skärm, tydligare med endast färg. */
+body {
+    background-color: #ced3eb;
+    
+}
+
+
+/* ALLT centrerat! */
+    
+* {
+    text-align: center;
+}
+ 
+
+h1, h2 {
+    
+    font-family: Georgia, serif; 
+    text-shadow: 0 0 .20em white;
+
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img { 
+    position: inherit;
+}
+
+
+/* knapp till startsida */
+
+.startsida > a { 
+    color:#0606de;
+    font-size: 30px;    
+    font-family: Georgia, serif; 
+    text-shadow: .2em .2em .10em white;
+    font-weight: 900;
+   
+}
+
+
+.valid > a {
+
+    text-align: center;
+    color: #1a06b5;
+    font-size: 25px;
+
+}
+
+
+    
+    
+address a {
+    color: #0e0e86;
+}
+
+
+
+address p, nav {
+    
+    font-size: 20px;
+}
+
+
+
+
+   /* Till större skärmar */ 
+
+@media all and (min-width: 40em) {
+    
+    
+    
+/* Bakgrundsbild stör formuläret från en mobil, använd endast till större skärmar. */
+    
+body {
+    
+    background-image: url(images/background3_ced3eb.jpg);
+    background-color: #ced3eb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    
+
+    
+    
+/* mindre knapp och text för större skärmar */  
+    
+.startsida > a { 
+        font-size: 20px;
+    
+}
+        
+    
+ address, nav {
+    
+    font-size: 18px;
+}
+   
+    
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
