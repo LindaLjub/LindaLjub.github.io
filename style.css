@@ -1,55 +1,110 @@
-/*
-I det här dokumentet hittar du all styling för det här projektet,
-i morgon ska vi lära oss att skriva css.
-*/
 
-/* Här är styling som gäller för hela sidan */
-body {
+/* Till större skärmar */ 
+@media all and (min-width: 40em) {
+    
+    .projects 
+    {
+      /* Gör att dom lägger sig brevid varandra */
+      display: flex;
+    }  
+
+    .button 
+    {
+      background-color: white;
+      color: #ff726c; 
+      padding: 20px;
+      border-radius: 40px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 550;
+    }
+
+    footer {
+      background-color: #fbcfcd; 
+      padding: 100px 300px;
+      text-align: center;
+    }     
+}
+
+
+/* Till mindre skärmar */ 
+@media all and (max-width: 40em) {
+    
+.button 
+{
+  background-color: none;
+  color: #ff726c; 
+  padding: 2px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+/* footern */
+footer 
+{
+  background-color: #fbcfcd; 
+  padding: 80px 170px;
+  text-align: left;
+
+}
+
+}
+
+/* För mindre skärmar + större det som ej ändras. */
+
+body 
+{
   box-sizing: border-box;
   font-family: Helvetica, "sans serif";
   color: #ff726c; 
   margin: 0;
 }
 
-/* Här är styling som gäller för alla rubriker och texter */
+/* rubriker och texter */
 
-h1 {
+h1 
+{
   margin: 20px;
   font-size: 65px;
 }
 
-h2 {
+h2 
+{
   font-size: 30px;
   font-weight: 200;
   margin-bottom: 50px;
 }
 
-h3 {
+h3 
+{
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
-
 }
 
-p {
+p 
+{
   font-size: 17px;
   font-weight: 200;
   color: black;
 }
 
 
-/* Här är styling för about-me sektionen */
-
-.about-me {
+/*  about-me sektionen */
+.about-me 
+{
   background-image: url("background_flower.jpg");
   padding: 100px 30px;
   color: white;
   text-align: center;
 }
 
-/* Här är styling för bilden som ligger i about-me sektionen */
-
-.about-me img{
+/* bilden som ligger i about-me sektionen */
+.about-me img
+{
   width: 190px;
   border-radius: 50%;
   display: block;
@@ -57,27 +112,26 @@ p {
 }
 
 
-/* Här är styling för greatness sektionen */
-
-.greatness {
+/* Hgreatness sektionen */
+.greatness 
+{
   padding: 5px; 
   width: 90%; 
   margin: 0 auto;
 }
 
-.projects_headline {
+.projects_headline 
+{
   text-align: center;
   background-color: #ff726c;
   padding: 20px;
   margin: 5px;
   color: white;
-  
-}
-.projects {
-  display: flex; /* Gör att dom lägger sig brevid varandra */
 }
 
-.links_webbsites{
+
+.links_webbsites
+{
   background-color: lightgray;
   padding: 20px;
   margin: 5px;
@@ -85,13 +139,12 @@ p {
   white-space: nowrap;
 }
 
-.links_webbsites a {
+.links_webbsites a 
+{
 font-size: 15px;
 color: midnightblue;
 font-weight: bold;
 text-decoration: none;
-
-  
 }
 
 .links_webbsites a:hover
@@ -99,8 +152,10 @@ text-decoration: none;
   color: grey;
 }
 
+
 /* Södertörns högskola */
-.sodertorn {
+.sodertorn 
+{
   background-color: lightgray;
   padding: 20px;
   margin: 5px;
@@ -108,7 +163,8 @@ text-decoration: none;
 }
 
 /* STI */
-.STI {
+.STI 
+{
   background-color: lightgray;
   padding: 20px;
   margin: 5px;
@@ -116,36 +172,10 @@ text-decoration: none;
 }
 
 /* Hobby Projekt */
-.hobby {
+.hobby 
+{
   background-color: lightgray;
   padding: 20px;
   margin: 5px;
   text-align: left;
-}
-
-
-/* Här finns all styling för knapparna*/
-
-.button {
-  background-color: white;
-  color: #ff726c; 
-  padding: 20px;
-  border-radius: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 550;
-}
-
-
-/* Här är styling för footern på sidan */
-footer {
-  background-color: #fbcfcd; 
-  padding: 100px 300px;
-  text-align: center;
-
-}
-
-#canvas {
- padding: 100px 60px; 
-
 }
