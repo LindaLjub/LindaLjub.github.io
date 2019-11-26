@@ -1,19 +1,13 @@
 
-/* Till större skärmar */ 
+/* For larger screens (Computers) */ 
 @media all and (min-width: 40em) {
-    
-    .projects 
-    {
-      /* Gör att dom lägger sig brevid varandra */
-      display: flex;
-    }  
 
     .button 
     {
       background-color: white;
       color: #ff726c; 
       padding: 20px;
-      border-radius: 40px;
+      border-radius: 20px;
       text-transform: uppercase;
       text-decoration: none;
       font-weight: 550;
@@ -26,74 +20,39 @@
     }     
 }
 
-
-/* Till mindre skärmar */ 
+/* For smaller screens (Mobile) */ 
 @media all and (max-width: 40em) {
     
-.button 
-{
-  background-color: none;
-  color: #ff726c; 
-  padding: 2px;
-  border-radius: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 550;
+  .button 
+  {
+    background-color: none;
+    color: #ff726c; 
+    padding: 2px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 550;
+  }
+
+  footer 
+  {
+    background-color: #fbcfcd; 
+    padding: 80px 170px;
+    text-align: left;
+  }
 }
 
-/* footern */
-footer 
-{
-  background-color: #fbcfcd; 
-  padding: 80px 170px;
-  text-align: left;
-
-}
-
-}
-
-/* För mindre skärmar + större det som ej ändras. */
-
+/* For both screens */
 body 
 {
-  box-sizing: border-box;
-  font-family: Helvetica, "sans serif";
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ff726c;
   color: #ff726c; 
   margin: 0;
 }
 
-/* rubriker och texter */
-
-h1 
-{
-  margin: 20px;
-  font-size: 65px;
-}
-
-h2 
-{
-  font-size: 30px;
-  font-weight: 200;
-  margin-bottom: 50px;
-}
-
-h3 
-{
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-p 
-{
-  font-size: 17px;
-  font-weight: 200;
-  color: black;
-}
-
-
-/*  about-me sektionen */
+/*  about-me section */
 .about-me 
 {
   background-image: url("background_flower.jpg");
@@ -101,8 +60,7 @@ p
   color: white;
   text-align: center;
 }
-
-/* bilden som ligger i about-me sektionen */
+/* picture*/
 .about-me img
 {
   width: 190px;
@@ -110,72 +68,122 @@ p
   display: block;
   margin: 0 auto; 
 }
-
-
-/* Hgreatness sektionen */
-.greatness 
+/* Headlines */
+.about-me h1
 {
-  padding: 5px; 
-  width: 90%; 
-  margin: 0 auto;
+  font-family: "Allerta Stencil", Sans-serif;
+  text-shadow: 1px 1px black;
+  margin: 20px;
+  font-size: 65px;
+  font-weight: 300;
+}
+.about-me h2
+{
+  font-family: "Allerta Stencil", Sans-serif;
+  text-shadow: 1px 1px black;
+  font-size: 30px;
+  font-weight: 200;
 }
 
+
+/* greatness sektionen, holds the middle part in 90% */
+.greatness 
+{
+  margin: 0 auto;
+  width: 90%;
+} 
+
+
+/* Headline for all projects */
 .projects_headline 
 {
+  font-family: "Allerta Stencil", Sans-serif; 
   text-align: center;
   background-color: #ff726c;
+  color: white;
   padding: 20px;
-  margin: 5px;
+  width: 100%; 
+}
+.projects_headline h2
+{
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+
+/* Titles on the tabs */
+.titles
+{
+  display: flex;
+}
+.titles h2
+{
+  padding-top: 0px;
+  padding-bottom: 0px; 
+  padding-right: 25px;
+  padding-left: 25px;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 22px;
+  font-weight: 150;
+}
+
+
+/* Information in the tabs, titles and tabs */
+/*  boxes with project info  */
+ .STI_title, .hobby_title, .sodertorn_title, .links_webbsites_title
+ {
+   border-top-right-radius: 30px;
+   border-top-left-radius: 30px;
+   background: rgba(255, 255, 255, 0.5);
+   text-align: left;
+   margin-right: 3px;
+ }
+ .STI_title:hover, .hobby_title:hover, .sodertorn_title:hover, .links_webbsites_title:hover
+ {
+   background: rgba(255, 255, 255, 0.8);
+ }
+ .sodertorn_text, .STI_text, .hobby_text
+ {
+   border-top: 2px solid white;
+   background: rgba(255, 255, 255, 0.5);
+   padding: 20px;
+   text-align: left;
+ }
+
+/* Text inside the boxes */
+ .sodertorn_text p, .STI_text p, .hobby_text p 
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+.sodertorn_text h3, .STI_text h3, .hobby_text h3 
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
   color: white;
 }
 
 
-.links_webbsites
-{
-  background-color: lightgray;
-  padding: 20px;
-  margin: 5px;
-  text-align: left;
-  white-space: nowrap;
-}
-
-.links_webbsites a 
-{
-font-size: 15px;
-color: midnightblue;
-font-weight: bold;
-text-decoration: none;
-}
-
-.links_webbsites a:hover
-{
-  color: grey;
-}
-
-
-/* Södertörns högskola */
-.sodertorn 
-{
-  background-color: lightgray;
-  padding: 20px;
-  margin: 5px;
-  text-align: left;
-}
-
-/* STI */
-.STI 
-{
-  background-color: lightgray;
-  padding: 20px;
-  margin: 5px;
-  text-align: left;
-}
-
-/* Hobby Projekt */
-.hobby 
-{
-  background-color: lightgray;
-  padding: 20px;
-  margin: 5px;
-  text-align: left;
-}
+ /* Links to projects */
+ .links_webbsites_text
+ {
+   border-top: 2px solid white;
+   background: rgba(255, 255, 255, 0.5);
+   padding: 20px;
+   text-align: left;
+   white-space: nowrap;
+ }
+ .links_webbsites_text a 
+ {
+   font-family: "Allerta Stencil", Sans-serif;
+   font-size: 18px;
+   color: grey;
+   text-decoration: none;
+ }
+ .links_webbsites_text a:hover
+ {
+   color: white;
+ }
