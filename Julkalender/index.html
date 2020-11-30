@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Julkalender</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <div class="container">  
+        <div>
+            <div class="header">
+                <img src ="Godjul.png">
+            </div>
+                <div>
+                    <div class="flex-container">
+                        <div class="closed" id="1" onclick="infoFunction('1')">1</div>
+                        <div class="closed" id="2" onclick="infoFunction('2')">2</div>
+                        <div class="closed" id="3" onclick="infoFunction('3')">3</div>
+                        <div class="closed" id="4" onclick="infoFunction('4')">4</div>
+                        <div class="closed" id="5" onclick="infoFunction('5')">5</div>
+                        <div class="closed" id="6" onclick="infoFunction('6')">6</div>
+                    </div>
+                    <div class="info" id="info1"> <h2>Ho ho ho!</h2>
+                        För att du ska kunna äta så mycket som möjligt under julen måste du träna! <br>
+                        Varje dag fram till jul kommer du att få ett uppdrag av tomten som du MÅSTE utföra. <br>
+                        God jul och lycka till önskar tomten! <br><br>
+                        Dagens uppdrag: Gör totalt 40 situps under dagen. <br>
+                        Alla varianter av situps är tillåtna, för lite inspiration se videon nedan. <br><br>
+                        <iframe width="280" height="160" src="https://www.youtube.com/embed/jDwoBqPH0jk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </iframe>
+                        
+                    </div>
+                    <div class="info" id="info2"> <h2>2:a December är kommen!</h2>
+                        Idag vill tomten att du går en extra promenad, <br>
+                        du ska gå ungefär 3000 extra steg mot vad du brukar gå på en dag. <br>
+                        Lycka till och kom ihåg att om du inte gör alla uppdrag så blir det inga julklappar! <br><br>
+                        <img src="4.gif" alt="Avatar">
+                    </div>
+                    <div class="info" id="info3"> test 3</div>
+                    <div class="info" id="info4"> test4 </div>
+                    <div class="info" id="info5"> test 5</div>
+                    <div class="info" id="info6"> test 6</div>
+
+                    <div class="flex-container">
+                        <div class="closed" id="7" onclick="infoFunction('7')">7</div>
+                        <div class="closed" id="8" onclick="infoFunction('8')">8</div>
+                        <div class="closed" id="9" onclick="infoFunction('9')">9</div>
+                        <div class="closed" id="10" onclick="infoFunction('10')">10</div>
+                        <div class="closed" id="11" onclick="infoFunction('11')">11</div>
+                        <div class="closed" id="12" onclick="infoFunction('12')">12</div>
+                    </div>
+                    <div class="info" id="info7"> test 7</div>
+                    <div class="info" id="info8"> test 8</div>
+                    <div class="info" id="info9"> test9 </div>
+                    <div class="info" id="info10"> test10 </div>
+                    <div class="info" id="info11"> test11 </div>
+                    <div class="info" id="info12"> test12 </div>
+
+                    <div class="flex-container">
+                        <div class="closed" id="13" onclick="infoFunction('13')">13</div>
+                        <div class="closed" id="14" onclick="infoFunction('14')">14</div>
+                        <div class="closed" id="15" onclick="infoFunction('15')">15</div>
+                        <div class="closed" id="16" onclick="infoFunction('16')">16</div>
+                        <div class="closed" id="17" onclick="infoFunction('17')">17</div>
+                        <div class="closed" id="18" onclick="infoFunction('18')">18</div>
+                    </div>           
+                    <div class="info" id="info13"> test 13 </div>
+                    <div class="info" id="info14"> test 14 </div>
+                    <div class="info" id="info15"> test 15</div>
+                    <div class="info" id="info16"> test 16</div>
+                    <div class="info" id="info17"> test 17</div>
+                    <div class="info" id="info18"> test 18 </div>
+
+                    <div class="flex-container">
+                        <div class="closed" id="19" onclick="infoFunction('19')">19</div>
+                        <div class="closed" id="20" onclick="infoFunction('20')">20</div>
+                        <div class="closed" id="21" onclick="infoFunction('21')">21</div> 
+                        <div class="closed" id="22" onclick="infoFunction('22')">22</div> 
+                        <div class="closed" id="23" onclick="infoFunction('23')">23</div>
+                        <div class="closed" id="24" onclick="infoFunction('24')">24</div>
+                    </div>
+                    <div class="info" id="info19"> test 19</div>
+                    <div class="info" id="info20"> test 20 </div>
+                    <div class="info" id="info21"> test 21 </div>
+                    <div class="info" id="info22"> test 22</div>
+                    <div class="info" id="info23"> test 23</div>
+                    <div class="info" id="info24"> test 24</div>
+                </div>
+            </div>
+            <div class="pynt">
+                <img src ="julljus.png">
+            </div>
+        </div> 
+    </div> 
+
+        <!-- script -->
+        <!-- <script src="scripts/messages.js"></script>
+        <script src="scripts/calendar.js"></script> -->
+
+    </body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+
+function infoFunction(day){
+
+    var dateNow = new Date(); //Fri Nov 20 2020
+    var dayD = dateNow.getUTCDate();
+    if(day <= dayD)
+    {
+        // kolla om öppen
+        var element = document.getElementById(day);
+        if(element.className == "open")
+        {
+            element.className="closed";
+            var info = "info" + day;
+            document.getElementById(info).style.display = "none";
+        }
+        else {
+
+            for(var i = 1; i < 25; i++)
+            {
+                var open = document.getElementById(i.toString());
+                if(open.className == "open")
+                {
+                    open.className="closed";
+                    document.getElementById("info" + i.toString()).style.display = "none";
+                }
+            }
+
+            element.className="open";
+            var info = "info" + day;
+            document.getElementById(info).style.display = "block";
+            
+        }
+
+    }
+    else
+    {
+        alert("Oj oj försök inte! Du får inte öppna den luckan ännu.")
+    }
+
+
+  
+
+
+}
+
+</script>
+
+<style>
+
+body {
+    background-color: dodgerblue;
+    background-image: url("2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    padding: 0;
+}
+
+.header {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* doors */
+.closed, .open {
+    text-align: center;
+    padding: 30px;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    width: 15%;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 2px 2px 4px black;
+}
+
+/* closed door */
+.closed {
+    background: linear-gradient(135deg,  #ff6666 50%, #ff4d4d 50%);
+    font-size: 35px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.closed:hover {
+  background: linear-gradient(135deg, #999999 50%, grey 50%);
+  color: red;
+}
+
+/* open door */
+.open {
+    background-image: url("santa1.png");
+    background-color: aqua !important;
+    background-size: contain;
+}
+
+/* info */
+.info {
+
+    background-color: #ddddddb0;
+    font-size: 18px;
+    display: none;
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px black;
+}
+
+/* bottom img */
+.pynt {
+    text-align: center;
+    max-width: 800px;
+}
+
+.pynt > img { max-width: 800px; }
+
+/* mobile */
+@media screen and (max-width: 900px) {
+
+    body {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .closed, .open, .info {
+        width:auto;
+        margin: 15px;
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .pynt > img {
+        max-width: 450px;
+    }
+
+    .header > img {
+
+        width: inherit;
+    }
+    
+    .info {
+        background-color: lightgrey;
+    }
+}
+
+</style>
