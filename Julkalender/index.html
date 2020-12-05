@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>Julkalender</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="">
+        <!--<link rel="stylesheet" href="">-->
         <link rel="icon" href="santa1.png" type="favicon"/>
     </head>
     <body>
@@ -185,10 +185,10 @@ function ratings()
     
 function infoFunction(day){
 
-  // var dateNow = new Date(); //Fri Nov 20 2020
-  // var dayD = dateNow.getUTCDate();
-  //  if(day <= dayD)
-  //  {
+  var dateNow = new Date(); //Fri Nov 20 2020
+  var dayD = dateNow.getUTCDate();
+  if(day <= dayD)
+  {
         // kolla om öppen
         var element = document.getElementById(day);
         if(element.className == "open")
@@ -215,11 +215,11 @@ function infoFunction(day){
             
         }
 
-  //  }
-  //  else
-  //  {
-  //      alert("Oj oj försök inte! Du får inte öppna den luckan ännu.")
-   // }
+  }
+  else
+  {
+       alert("Oj oj försök inte! Du får inte öppna den luckan ännu.")
+  }
 
 }
 
