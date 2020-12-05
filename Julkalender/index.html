@@ -69,7 +69,22 @@
                         Tomten vill att du antingen gör 30 knäböj eller 30 jumping jacks. <br><br>
                         Valet är ditt, lycka till!
                     </div>
-                    <div class="info" id="info6"> test 6</div>
+                    <div class="info" id="info6"> 
+                    <h2>6:e december!</h2>
+                    Snart har ni tränat i en hel vecka, bra jobbat! <br><br>
+                    Dagens uppdrag kräver att man använder sig utav en vikt och därför har tomten tagit hjälp av Linda. 
+                    Hon kommer att skicka en tillhörande video där hon visar saker man har i hemmet som man kan använda som en vikt.
+                    Vattenflaskor fyllda med vatten kanske? Undra vad hon har hittat på. <br><br>
+                        
+                    Dagens uppdrag: 20st rodd med valfri vikt.<br>
+                    Kom ihåg att rodd är en övning för ryggen, tänk på att trycka ihop skulderbladen i toppläget. <br>
+                    Se video nedan alternativt video från Linda för mer info.<br><br>
+                    Lycka till! <br><br>
+                    
+                        
+                    <iframe width="280" height="160" src="https://www.youtube.com/embed/yvCOqNy0B00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                    </div>
 
                     <div class="flex-container">
                         <div class="closed" id="7" onclick="infoFunction('7')">7</div>
@@ -116,7 +131,7 @@
                     <div class="info" id="info23"> test 23</div>
                     <div class="info" id="info24"> test 24</div>
                 </div>
-                            <div class="ratings-container">
+                <div class="ratings-container">
                     <button class="myButton" onclick="ratings()">Se tomtens topplista</button>
                     <div class="rating" id="rating">
                         <ul>
@@ -125,10 +140,11 @@
                             <li>Anna <p class="stars">★★★★</p>☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</li><hr>
                             <li>Linda <p class="stars">★★★★</p>☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</li><hr>
                             <li>Fredrik <p class="stars">★☆★★</p>☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</li><hr>
+                            <li>Sandra <p class="stars">★☆★★</p>☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</li><hr>
                             <li>Dobban <p class="stars">★☆★☆</p>☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</li><hr>
-                            <li>Sandra <p class="stars">★☆★☆</p>☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</li><hr>
                             <li>Robert <p class="stars">☆☆☆☆</p>☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</li>
                         </ul>
+                        <p class="update">[Senast uppdaterad 4:e dec]</p>
                     </div>
                 </div>
             
@@ -169,10 +185,10 @@ function ratings()
     
 function infoFunction(day){
 
-   var dateNow = new Date(); //Fri Nov 20 2020
-   var dayD = dateNow.getUTCDate();
-    if(day <= dayD)
-    {
+  // var dateNow = new Date(); //Fri Nov 20 2020
+  // var dayD = dateNow.getUTCDate();
+  //  if(day <= dayD)
+  //  {
         // kolla om öppen
         var element = document.getElementById(day);
         if(element.className == "open")
@@ -199,11 +215,11 @@ function infoFunction(day){
             
         }
 
-    }
-    else
-    {
-        alert("Oj oj försök inte! Du får inte öppna den luckan ännu.")
-    }
+  //  }
+  //  else
+  //  {
+  //      alert("Oj oj försök inte! Du får inte öppna den luckan ännu.")
+   // }
 
 }
 
@@ -361,6 +377,11 @@ body {
     padding-inline-start: 0;
 
 }
+    
+    .update {
+        text-align: center;
+        font-size: 10px;
+    }
     
 .myButton {
 	box-shadow: 0px 5px 7px -3px #3e7327; 
