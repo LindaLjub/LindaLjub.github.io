@@ -13,7 +13,14 @@
             <div class="header">
                 <img src ="Godjul.png">
             </div>
-                <div>
+            <div class="finish">
+                <img src="hart.png" alt="Avatar" onclick="ratings('finish-info')">
+            </div>
+            <div class="finish-info" id="finish-info">
+            
+                
+            </div>
+                <div class="all">
                     <div class="flex-container">
                         <div class="closed" id="1" onclick="infoFunction('1')">1</div>
                         <div class="closed" id="2" onclick="infoFunction('2')">2</div>
@@ -300,7 +307,7 @@
                     </div>
                 </div>
                 <div class="ratings-container">
-                    <button class="myButton" onclick="ratings()">Se tomtens topplista</button>
+                    <button class="myButton" onclick="ratings('ratings')">Se tomtens topplista</button>
                     <div class="rating" id="rating">
                         <ul>
                             <li>David <p class="stars">★★★★★★★★★★★★★★★★★★★★★★★★</p></li><hr>
@@ -340,9 +347,9 @@ $( document ).ready(function() {
     
 });
 
-function ratings()
+function ratings(id)
 {  
-    var x = document.getElementById("rating");
+    var x = document.getElementById(id);
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
@@ -395,6 +402,19 @@ function infoFunction(day){
 
 <style>
 
+.finish {
+    text-align: center;
+    cursor: grab;
+}
+    
+.finish-info {
+    display: none; 
+}
+   
+.all {
+    display: none;
+}
+    
 body {
     background-color: dodgerblue;
     background-image: url("2.jpg");
@@ -528,9 +548,10 @@ img {
 
 .ratings-container
 {
-    margin: auto;
+   /* margin: auto;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 15px; */
+    display: none;
 }
 
 .rating {
